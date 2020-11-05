@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BD7313B-A7B3-4F65-B03B-855DF581B054}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UI.WinForm.My.MyApplication</StartupObject>
+    <RootNamespace>UI.WinForm</RootNamespace>
+    <AssemblyName>UI.WinForm</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UI.WinForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UI.WinForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar">
+      <HintPath>..\..\..\..\..\..\Application Files\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WinFormAnimation">
+      <HintPath>..\..\..\..\..\..\Application Files\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\ConvertItem.vb" />
+    <Compile Include="Forms\TestForms\Form1.designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForms\Form2.designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForms\Form3.designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\FormUsers.designer.vb">
+      <DependentUpon>FormUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\FormUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Others\FormCustomPopup.designer.vb">
+      <DependentUpon>FormCustomPopup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Others\FormCustomPopup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\FormUserProfile.designer.vb">
+      <DependentUpon>FormUserProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\FormUserProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\FormLogin.designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.designer.vb">
+      <DependentUpon>FormPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\FormRecoverPassword.designer.vb">
+      <DependentUpon>FormRecoverPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\FormRecoverPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\FormWelcome.designer.vb">
+      <DependentUpon>FormWelcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\FormWelcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Helpers\DataValidation.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\TestForms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\FormUsers.resx">
+      <DependentUpon>FormUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Others\FormCustomPopup.resx">
+      <DependentUpon>FormCustomPopup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\FormUserProfile.resx">
+      <DependentUpon>FormUserProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\FormRecoverPassword.resx">
+      <DependentUpon>FormRecoverPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\FormWelcome.resx">
+      <DependentUpon>FormWelcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Models\Domain.Models.vbproj">
+      <Project>{ab5e827e-0088-4d2c-96e4-b24267807b5d}</Project>
+      <Name>Domain.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.ValueObjects\Domain.ValueObjects.vbproj">
+      <Project>{1734ab41-dc2e-428a-baee-59b12becf63a}</Project>
+      <Name>Domain.ValueObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Common\Infrastructure.Common.vbproj">
+      <Project>{6023ccb2-2970-403a-811a-ca6501469a71}</Project>
+      <Name>Infrastructure.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defaultImageProfileUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ViewModels\Leeme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
