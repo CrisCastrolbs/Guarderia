@@ -192,17 +192,17 @@ Public Class FormPrincipal
 
     'BUTTONS TO OPEN FORMS "
     Private Sub btnPacient_Click(sender As Object, e As EventArgs) Handles btnPacient.Click
-        openFormOnPanel(Of Form1)()
+        openFormOnPanel(Of FormNinyo)()
         activatedButton(btnPacient)
     End Sub
 
     Private Sub btnClinicalHistory_Click(sender As Object, e As EventArgs) Handles btnMatricula.Click
-        openFormOnPanel(Of Form2)()
+        openFormOnPanel(Of FormMatricula)()
         activatedButton(btnMatricula)
     End Sub
 
     Private Sub btnCalendar_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
-        openFormOnPanel(Of Form3)()
+        openFormOnPanel(Of FormEncargado)()
         activatedButton(btnMenu)
     End Sub
 
