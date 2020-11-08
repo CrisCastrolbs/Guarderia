@@ -31,7 +31,7 @@ Partial Class FormMenu
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBuscar = New System.Windows.Forms.TextBox()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnAnyadir = New System.Windows.Forms.Button()
@@ -144,12 +144,12 @@ Partial Class FormMenu
         Me.Label2.TabIndex = 67
         Me.Label2.Text = "Buscar"
         '
-        'TextBuscar
+        'txtBuscar
         '
-        Me.TextBuscar.Location = New System.Drawing.Point(556, 49)
-        Me.TextBuscar.Name = "TextBuscar"
-        Me.TextBuscar.Size = New System.Drawing.Size(287, 22)
-        Me.TextBuscar.TabIndex = 66
+        Me.txtBuscar.Location = New System.Drawing.Point(556, 49)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(287, 22)
+        Me.txtBuscar.TabIndex = 66
         '
         'btnCerrar
         '
@@ -236,7 +236,7 @@ Partial Class FormMenu
         Me.ClientSize = New System.Drawing.Size(1245, 642)
         Me.Controls.Add(Me.PanelMenu)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBuscar)
+        Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnAnyadir)
@@ -261,7 +261,7 @@ Partial Class FormMenu
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBuscar As TextBox
+    Friend WithEvents txtBuscar As TextBox
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnAnyadir As Button

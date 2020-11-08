@@ -15,7 +15,7 @@
 
     End Sub
 
-    Private Sub TextBuscar_TextChanged(sender As Object, e As EventArgs) Handles TextBuscar.TextChanged
+    Private Sub TextBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
 
     End Sub
 
@@ -31,7 +31,7 @@
 
     End Sub
 
-    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) 
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs)
 
     End Sub
 

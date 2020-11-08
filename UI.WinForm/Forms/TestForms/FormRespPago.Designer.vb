@@ -25,8 +25,6 @@ Partial Class FormRespPago
         Me.RespPagoGridView = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCerrar = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBuscar = New System.Windows.Forms.TextBox()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnAnyadir = New System.Windows.Forms.Button()
         Me.PanelRespPago = New System.Windows.Forms.Panel()
@@ -56,6 +54,10 @@ Partial Class FormRespPago
         Me.cmbDistrito = New System.Windows.Forms.ComboBox()
         Me.cmbCanton = New System.Windows.Forms.ComboBox()
         Me.cmbProvincia = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtBuscarInt = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtBuscarVachar = New System.Windows.Forms.TextBox()
         CType(Me.RespPagoGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelRespPago.SuspendLayout()
         Me.SuspendLayout()
@@ -102,23 +104,6 @@ Partial Class FormRespPago
         Me.btnCerrar.TabIndex = 50
         Me.btnCerrar.Text = "X"
         Me.btnCerrar.UseVisualStyleBackColor = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label2.Location = New System.Drawing.Point(478, 37)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 17)
-        Me.Label2.TabIndex = 52
-        Me.Label2.Text = "Buscar"
-        '
-        'TextBuscar
-        '
-        Me.TextBuscar.Location = New System.Drawing.Point(563, 36)
-        Me.TextBuscar.Name = "TextBuscar"
-        Me.TextBuscar.Size = New System.Drawing.Size(287, 22)
-        Me.TextBuscar.TabIndex = 51
         '
         'btnEditar
         '
@@ -442,17 +427,53 @@ Partial Class FormRespPago
         Me.cmbProvincia.Size = New System.Drawing.Size(270, 24)
         Me.cmbProvincia.TabIndex = 62
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label5.Location = New System.Drawing.Point(458, 59)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(96, 17)
+        Me.Label5.TabIndex = 92
+        Me.Label5.Text = "Buscar por Id:"
+        '
+        'txtBuscarInt
+        '
+        Me.txtBuscarInt.Location = New System.Drawing.Point(560, 56)
+        Me.txtBuscarInt.Name = "txtBuscarInt"
+        Me.txtBuscarInt.Size = New System.Drawing.Size(288, 22)
+        Me.txtBuscarInt.TabIndex = 91
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label15.Location = New System.Drawing.Point(458, 25)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(56, 17)
+        Me.Label15.TabIndex = 90
+        Me.Label15.Text = "Buscar:"
+        '
+        'txtBuscarVachar
+        '
+        Me.txtBuscarVachar.Location = New System.Drawing.Point(560, 20)
+        Me.txtBuscarVachar.Name = "txtBuscarVachar"
+        Me.txtBuscarVachar.Size = New System.Drawing.Size(287, 22)
+        Me.txtBuscarVachar.TabIndex = 89
+        '
         'FormRespPago
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1245, 642)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtBuscarInt)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.txtBuscarVachar)
         Me.Controls.Add(Me.PanelRespPago)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnAnyadir)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBuscar)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RespPagoGridView)
@@ -469,8 +490,6 @@ Partial Class FormRespPago
     Friend WithEvents RespPagoGridView As DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCerrar As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBuscar As TextBox
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnAnyadir As Button
     Friend WithEvents PanelRespPago As Panel
@@ -500,4 +519,8 @@ Partial Class FormRespPago
     Friend WithEvents cmbDistrito As ComboBox
     Friend WithEvents cmbCanton As ComboBox
     Friend WithEvents cmbProvincia As ComboBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtBuscarInt As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents txtBuscarVachar As TextBox
 End Class

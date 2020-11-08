@@ -44,14 +44,16 @@ Partial Class FormNinyo
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBuscar = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnAnyadir = New System.Windows.Forms.Button()
         Me.BtnEditar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblTotalNinyas = New System.Windows.Forms.Label()
         Me.lblTotalNinyos = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtBuscarInt = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtBuscarVachar = New System.Windows.Forms.TextBox()
         CType(Me.NinyosGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelNinyo.SuspendLayout()
         Me.SuspendLayout()
@@ -327,23 +329,6 @@ Partial Class FormNinyo
         Me.Label14.TabIndex = 7
         Me.Label14.Text = "Cédula:"
         '
-        'TextBuscar
-        '
-        Me.TextBuscar.Location = New System.Drawing.Point(491, 49)
-        Me.TextBuscar.Name = "TextBuscar"
-        Me.TextBuscar.Size = New System.Drawing.Size(287, 22)
-        Me.TextBuscar.TabIndex = 47
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label2.Location = New System.Drawing.Point(411, 50)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 17)
-        Me.Label2.TabIndex = 48
-        Me.Label2.Text = "Buscar"
-        '
         'BtnAnyadir
         '
         Me.BtnAnyadir.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -415,20 +400,56 @@ Partial Class FormNinyo
         Me.lblTotalNinyos.TabIndex = 54
         Me.lblTotalNinyos.Text = "Label5"
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label5.Location = New System.Drawing.Point(458, 61)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(96, 17)
+        Me.Label5.TabIndex = 96
+        Me.Label5.Text = "Buscar por Id:"
+        '
+        'txtBuscarInt
+        '
+        Me.txtBuscarInt.Location = New System.Drawing.Point(560, 58)
+        Me.txtBuscarInt.Name = "txtBuscarInt"
+        Me.txtBuscarInt.Size = New System.Drawing.Size(288, 22)
+        Me.txtBuscarInt.TabIndex = 95
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label15.Location = New System.Drawing.Point(458, 27)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(56, 17)
+        Me.Label15.TabIndex = 94
+        Me.Label15.Text = "Buscar:"
+        '
+        'txtBuscarVachar
+        '
+        Me.txtBuscarVachar.Location = New System.Drawing.Point(560, 22)
+        Me.txtBuscarVachar.Name = "txtBuscarVachar"
+        Me.txtBuscarVachar.Size = New System.Drawing.Size(287, 22)
+        Me.txtBuscarVachar.TabIndex = 93
+        '
         'FormNinyo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1245, 642)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtBuscarInt)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.txtBuscarVachar)
         Me.Controls.Add(Me.lblTotalNinyos)
         Me.Controls.Add(Me.lblTotalNinyas)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.BtnEditar)
         Me.Controls.Add(Me.BtnAnyadir)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBuscar)
         Me.Controls.Add(Me.PanelNinyo)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnEdit)
@@ -468,8 +489,6 @@ Partial Class FormNinyo
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtCedula As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents TextBuscar As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents dateNacimiento As DateTimePicker
     Friend WithEvents BtnAnyadir As Button
     Friend WithEvents BtnEditar As Button
@@ -477,4 +496,8 @@ Partial Class FormNinyo
     Friend WithEvents Label4 As Label
     Friend WithEvents lblTotalNinyas As Label
     Friend WithEvents lblTotalNinyos As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtBuscarInt As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents txtBuscarVachar As TextBox
 End Class
