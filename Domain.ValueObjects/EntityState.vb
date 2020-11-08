@@ -2,5 +2,5 @@
     Added
     Removed
     Edited
-    Listar
+    List
 End Enum
