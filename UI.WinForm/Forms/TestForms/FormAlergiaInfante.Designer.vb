@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormAlergiaInfante
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormAlergiaInfante
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PanelAlergiaInfante = New System.Windows.Forms.Panel()
         Me.cmbTipoAlergia = New System.Windows.Forms.ComboBox()
@@ -31,7 +31,7 @@ Partial Class FormAlergiaInfante
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBuscar = New System.Windows.Forms.TextBox()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
@@ -139,18 +139,18 @@ Partial Class FormAlergiaInfante
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label2.Location = New System.Drawing.Point(466, 50)
+        Me.Label2.Location = New System.Drawing.Point(449, 32)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 17)
+        Me.Label2.Size = New System.Drawing.Size(56, 17)
         Me.Label2.TabIndex = 85
-        Me.Label2.Text = "Buscar"
+        Me.Label2.Text = "Buscar:"
         '
-        'TextBuscar
+        'txtBuscar
         '
-        Me.TextBuscar.Location = New System.Drawing.Point(551, 49)
-        Me.TextBuscar.Name = "TextBuscar"
-        Me.TextBuscar.Size = New System.Drawing.Size(287, 22)
-        Me.TextBuscar.TabIndex = 84
+        Me.txtBuscar.Location = New System.Drawing.Point(551, 27)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(287, 22)
+        Me.txtBuscar.TabIndex = 84
         '
         'btnCerrar
         '
@@ -160,7 +160,7 @@ Partial Class FormAlergiaInfante
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Ebrima", 12.0!)
         Me.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnCerrar.Location = New System.Drawing.Point(1, 13)
+        Me.btnCerrar.Location = New System.Drawing.Point(-2, 0)
         Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(47, 43)
@@ -239,12 +239,12 @@ Partial Class FormAlergiaInfante
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(65, 42)
+        Me.Label1.Location = New System.Drawing.Point(43, 32)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(387, 29)
+        Me.Label1.Size = New System.Drawing.Size(324, 29)
         Me.Label1.TabIndex = 78
-        Me.Label1.Text = "Registro de Alergia al Ingrediente"
+        Me.Label1.Text = "Registro de Alergia Niño(a)."
         '
         'FormAlergiaInfante
         '
@@ -254,7 +254,7 @@ Partial Class FormAlergiaInfante
         Me.ClientSize = New System.Drawing.Size(1245, 642)
         Me.Controls.Add(Me.PanelAlergiaInfante)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBuscar)
+        Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnEliminar)
@@ -280,7 +280,7 @@ Partial Class FormAlergiaInfante
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBuscar As TextBox
+    Friend WithEvents txtBuscar As TextBox
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnEliminar As Button

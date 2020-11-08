@@ -23,7 +23,7 @@ Partial Class FormPagoMensual
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBuscar = New System.Windows.Forms.TextBox()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
@@ -36,14 +36,14 @@ Partial Class FormPagoMensual
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.PanelPagoMensual = New System.Windows.Forms.Panel()
-        Me.cmbCedulaNinyo = New System.Windows.Forms.ComboBox()
         Me.cmbRespPago = New System.Windows.Forms.ComboBox()
+        Me.cmbCedulaNinyo = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.lbl2 = New System.Windows.Forms.Label()
         Me.txtMontoTotal = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.txtMontoBase = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.txtMontoComidas = New System.Windows.Forms.TextBox()
+        Me.txtMontoBase = New System.Windows.Forms.TextBox()
         CType(Me.PagoMensualGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelPagoMensual.SuspendLayout()
         Me.SuspendLayout()
@@ -58,12 +58,12 @@ Partial Class FormPagoMensual
         Me.Label2.TabIndex = 58
         Me.Label2.Text = "Buscar"
         '
-        'TextBuscar
+        'txtBuscar
         '
-        Me.TextBuscar.Location = New System.Drawing.Point(563, 49)
-        Me.TextBuscar.Name = "TextBuscar"
-        Me.TextBuscar.Size = New System.Drawing.Size(287, 22)
-        Me.TextBuscar.TabIndex = 57
+        Me.txtBuscar.Location = New System.Drawing.Point(563, 49)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(287, 22)
+        Me.txtBuscar.TabIndex = 57
         '
         'btnCerrar
         '
@@ -240,6 +240,14 @@ Partial Class FormPagoMensual
         Me.PanelPagoMensual.Size = New System.Drawing.Size(335, 642)
         Me.PanelPagoMensual.TabIndex = 59
         '
+        'cmbRespPago
+        '
+        Me.cmbRespPago.FormattingEnabled = True
+        Me.cmbRespPago.Location = New System.Drawing.Point(19, 435)
+        Me.cmbRespPago.Name = "cmbRespPago"
+        Me.cmbRespPago.Size = New System.Drawing.Size(269, 24)
+        Me.cmbRespPago.TabIndex = 45
+        '
         'cmbCedulaNinyo
         '
         Me.cmbCedulaNinyo.FormattingEnabled = True
@@ -248,13 +256,29 @@ Partial Class FormPagoMensual
         Me.cmbCedulaNinyo.Size = New System.Drawing.Size(270, 24)
         Me.cmbCedulaNinyo.TabIndex = 44
         '
-        'cmbRespPago
+        'Label9
         '
-        Me.cmbRespPago.FormattingEnabled = True
-        Me.cmbRespPago.Location = New System.Drawing.Point(19, 435)
-        Me.cmbRespPago.Name = "cmbRespPago"
-        Me.cmbRespPago.Size = New System.Drawing.Size(269, 24)
-        Me.cmbRespPago.TabIndex = 45
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(16, 311)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(107, 17)
+        Me.Label9.TabIndex = 43
+        Me.Label9.Text = "Cédula Niño(a):"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(16, 392)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(200, 17)
+        Me.Label10.TabIndex = 1
+        Me.Label10.Text = "Cédula Responsable de Pago:"
         '
         'lbl2
         '
@@ -274,18 +298,12 @@ Partial Class FormPagoMensual
         Me.txtMontoTotal.Size = New System.Drawing.Size(270, 22)
         Me.txtMontoTotal.TabIndex = 10
         '
-        'Label9
+        'txtMontoComidas
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(16, 311)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(107, 17)
-        Me.Label9.TabIndex = 43
-        Me.Label9.Text = "Cédula Niño(a):"
+        Me.txtMontoComidas.Location = New System.Drawing.Point(19, 189)
+        Me.txtMontoComidas.Name = "txtMontoComidas"
+        Me.txtMontoComidas.Size = New System.Drawing.Size(270, 22)
+        Me.txtMontoComidas.TabIndex = 8
         '
         'txtMontoBase
         '
@@ -293,24 +311,6 @@ Partial Class FormPagoMensual
         Me.txtMontoBase.Name = "txtMontoBase"
         Me.txtMontoBase.Size = New System.Drawing.Size(270, 22)
         Me.txtMontoBase.TabIndex = 6
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(16, 392)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(200, 17)
-        Me.Label10.TabIndex = 1
-        Me.Label10.Text = "Cédula Responsable de Pago:"
-        '
-        'txtMontoComidas
-        '
-        Me.txtMontoComidas.Location = New System.Drawing.Point(19, 189)
-        Me.txtMontoComidas.Name = "txtMontoComidas"
-        Me.txtMontoComidas.Size = New System.Drawing.Size(270, 22)
-        Me.txtMontoComidas.TabIndex = 8
         '
         'FormPagoMensual
         '
@@ -320,7 +320,7 @@ Partial Class FormPagoMensual
         Me.ClientSize = New System.Drawing.Size(1245, 642)
         Me.Controls.Add(Me.PanelPagoMensual)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBuscar)
+        Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnEliminar)
@@ -339,7 +339,7 @@ Partial Class FormPagoMensual
     End Sub
 
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBuscar As TextBox
+    Friend WithEvents txtBuscar As TextBox
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnEliminar As Button

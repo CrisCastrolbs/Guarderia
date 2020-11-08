@@ -54,7 +54,7 @@ Partial Class FormEncargado
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBuscar = New System.Windows.Forms.TextBox()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.cmbProvincia = New System.Windows.Forms.ComboBox()
         Me.cmbCanton = New System.Windows.Forms.ComboBox()
         Me.cmbDistrito = New System.Windows.Forms.ComboBox()
@@ -437,12 +437,12 @@ Partial Class FormEncargado
         Me.Label8.TabIndex = 52
         Me.Label8.Text = "Buscar"
         '
-        'TextBuscar
+        'txtBuscar
         '
-        Me.TextBuscar.Location = New System.Drawing.Point(553, 39)
-        Me.TextBuscar.Name = "TextBuscar"
-        Me.TextBuscar.Size = New System.Drawing.Size(287, 22)
-        Me.TextBuscar.TabIndex = 51
+        Me.txtBuscar.Location = New System.Drawing.Point(553, 39)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(287, 22)
+        Me.txtBuscar.TabIndex = 51
         '
         'cmbProvincia
         '
@@ -475,7 +475,7 @@ Partial Class FormEncargado
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1245, 666)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBuscar)
+        Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.PanelNinyo)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnEditar)
@@ -526,7 +526,7 @@ Partial Class FormEncargado
     Friend WithEvents txtCedula As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBuscar As TextBox
+    Friend WithEvents txtBuscar As TextBox
     Friend WithEvents cmbDistrito As ComboBox
     Friend WithEvents cmbCanton As ComboBox
     Friend WithEvents cmbProvincia As ComboBox
