@@ -48,7 +48,10 @@ Partial Class FormNinyo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BtnAnyadir = New System.Windows.Forms.Button()
         Me.BtnEditar = New System.Windows.Forms.Button()
-        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblTotalNinyas = New System.Windows.Forms.Label()
+        Me.lblTotalNinyos = New System.Windows.Forms.Label()
         CType(Me.NinyosGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelNinyo.SuspendLayout()
         Me.SuspendLayout()
@@ -348,7 +351,7 @@ Partial Class FormNinyo
         Me.BtnAnyadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAnyadir.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.BtnAnyadir.ForeColor = System.Drawing.SystemColors.Window
-        Me.BtnAnyadir.Location = New System.Drawing.Point(432, 592)
+        Me.BtnAnyadir.Location = New System.Drawing.Point(562, 592)
         Me.BtnAnyadir.Name = "BtnAnyadir"
         Me.BtnAnyadir.Size = New System.Drawing.Size(130, 38)
         Me.BtnAnyadir.TabIndex = 49
@@ -361,25 +364,56 @@ Partial Class FormNinyo
         Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.BtnEditar.ForeColor = System.Drawing.SystemColors.Window
-        Me.BtnEditar.Location = New System.Drawing.Point(568, 592)
+        Me.BtnEditar.Location = New System.Drawing.Point(698, 592)
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.Size = New System.Drawing.Size(130, 38)
         Me.BtnEditar.TabIndex = 50
         Me.BtnEditar.Text = "Editar"
         Me.BtnEditar.UseVisualStyleBackColor = False
         '
-        'BtnEliminar
+        'Label3
         '
-        Me.BtnEliminar.BackColor = System.Drawing.Color.IndianRed
-        Me.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.BtnEliminar.ForeColor = System.Drawing.SystemColors.Window
-        Me.BtnEliminar.Location = New System.Drawing.Point(704, 592)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(130, 38)
-        Me.BtnEliminar.TabIndex = 51
-        Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = False
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label3.Location = New System.Drawing.Point(40, 592)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(99, 20)
+        Me.Label3.TabIndex = 51
+        Me.Label3.Text = "Total Niñas:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(273, 595)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(99, 20)
+        Me.Label4.TabIndex = 52
+        Me.Label4.Text = "Total Niños:"
+        '
+        'lblTotalNinyas
+        '
+        Me.lblTotalNinyas.AutoSize = True
+        Me.lblTotalNinyas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalNinyas.ForeColor = System.Drawing.Color.Red
+        Me.lblTotalNinyas.Location = New System.Drawing.Point(160, 590)
+        Me.lblTotalNinyas.Name = "lblTotalNinyas"
+        Me.lblTotalNinyas.Size = New System.Drawing.Size(72, 24)
+        Me.lblTotalNinyas.TabIndex = 53
+        Me.lblTotalNinyas.Text = "Label5"
+        '
+        'lblTotalNinyos
+        '
+        Me.lblTotalNinyos.AutoSize = True
+        Me.lblTotalNinyos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.lblTotalNinyos.ForeColor = System.Drawing.Color.Red
+        Me.lblTotalNinyos.Location = New System.Drawing.Point(378, 590)
+        Me.lblTotalNinyos.Name = "lblTotalNinyos"
+        Me.lblTotalNinyos.Size = New System.Drawing.Size(72, 24)
+        Me.lblTotalNinyos.TabIndex = 54
+        Me.lblTotalNinyos.Text = "Label5"
         '
         'FormNinyo
         '
@@ -387,7 +421,10 @@ Partial Class FormNinyo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1245, 642)
-        Me.Controls.Add(Me.BtnEliminar)
+        Me.Controls.Add(Me.lblTotalNinyos)
+        Me.Controls.Add(Me.lblTotalNinyas)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.BtnEditar)
         Me.Controls.Add(Me.BtnAnyadir)
         Me.Controls.Add(Me.Label2)
@@ -436,5 +473,8 @@ Partial Class FormNinyo
     Friend WithEvents dateNacimiento As DateTimePicker
     Friend WithEvents BtnAnyadir As Button
     Friend WithEvents BtnEditar As Button
-    Friend WithEvents BtnEliminar As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents lblTotalNinyas As Label
+    Friend WithEvents lblTotalNinyos As Label
 End Class

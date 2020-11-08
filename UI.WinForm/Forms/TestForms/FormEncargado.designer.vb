@@ -29,6 +29,17 @@ Partial Class FormEncargado
         Me.EncargadoGridView = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelNinyo = New System.Windows.Forms.Panel()
+        Me.cmbNinyo = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtRelacion = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtNumTel2 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtNumTel1 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -42,22 +53,11 @@ Partial Class FormEncargado
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.txtDireccion = New System.Windows.Forms.TextBox()
-        Me.txtProvincia = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtCanton = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtDistrito = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtNumTel1 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtNumTel2 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtRelacion = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.cmbNinyo = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBuscar = New System.Windows.Forms.TextBox()
+        Me.cmbProvincia = New System.Windows.Forms.ComboBox()
+        Me.cmbCanton = New System.Windows.Forms.ComboBox()
+        Me.cmbDistrito = New System.Windows.Forms.ComboBox()
         CType(Me.EncargadoGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelNinyo.SuspendLayout()
         Me.SuspendLayout()
@@ -71,7 +71,7 @@ Partial Class FormEncargado
         Me.btnCerrar.Font = New System.Drawing.Font("Ebrima", 12.0!)
         Me.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnCerrar.Location = New System.Drawing.Point(1, 1)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(47, 43)
         Me.btnCerrar.TabIndex = 11
@@ -88,7 +88,7 @@ Partial Class FormEncargado
         Me.btnEditar.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnEditar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnEditar.Location = New System.Drawing.Point(583, 605)
-        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(130, 38)
         Me.btnEditar.TabIndex = 10
@@ -105,7 +105,7 @@ Partial Class FormEncargado
         Me.btnEliminar.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnEliminar.Location = New System.Drawing.Point(721, 605)
-        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(130, 38)
         Me.btnEliminar.TabIndex = 9
@@ -122,7 +122,7 @@ Partial Class FormEncargado
         Me.btnAnyadir.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnAnyadir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.btnAnyadir.Location = New System.Drawing.Point(445, 605)
-        Me.btnAnyadir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAnyadir.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnyadir.Name = "btnAnyadir"
         Me.btnAnyadir.Size = New System.Drawing.Size(130, 38)
         Me.btnAnyadir.TabIndex = 8
@@ -138,7 +138,7 @@ Partial Class FormEncargado
         Me.EncargadoGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.EncargadoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.EncargadoGridView.Location = New System.Drawing.Point(47, 92)
-        Me.EncargadoGridView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.EncargadoGridView.Margin = New System.Windows.Forms.Padding(4)
         Me.EncargadoGridView.Name = "EncargadoGridView"
         Me.EncargadoGridView.RowHeadersWidth = 51
         Me.EncargadoGridView.Size = New System.Drawing.Size(803, 478)
@@ -159,6 +159,9 @@ Partial Class FormEncargado
         'PanelNinyo
         '
         Me.PanelNinyo.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.PanelNinyo.Controls.Add(Me.cmbDistrito)
+        Me.PanelNinyo.Controls.Add(Me.cmbCanton)
+        Me.PanelNinyo.Controls.Add(Me.cmbProvincia)
         Me.PanelNinyo.Controls.Add(Me.cmbNinyo)
         Me.PanelNinyo.Controls.Add(Me.Label7)
         Me.PanelNinyo.Controls.Add(Me.txtRelacion)
@@ -167,11 +170,8 @@ Partial Class FormEncargado
         Me.PanelNinyo.Controls.Add(Me.Label5)
         Me.PanelNinyo.Controls.Add(Me.txtNumTel1)
         Me.PanelNinyo.Controls.Add(Me.Label4)
-        Me.PanelNinyo.Controls.Add(Me.txtDistrito)
         Me.PanelNinyo.Controls.Add(Me.Label3)
-        Me.PanelNinyo.Controls.Add(Me.txtCanton)
         Me.PanelNinyo.Controls.Add(Me.Label2)
-        Me.PanelNinyo.Controls.Add(Me.txtProvincia)
         Me.PanelNinyo.Controls.Add(Me.txtDireccion)
         Me.PanelNinyo.Controls.Add(Me.btnCancel)
         Me.PanelNinyo.Controls.Add(Me.btnSave)
@@ -191,6 +191,108 @@ Partial Class FormEncargado
         Me.PanelNinyo.Name = "PanelNinyo"
         Me.PanelNinyo.Size = New System.Drawing.Size(359, 666)
         Me.PanelNinyo.TabIndex = 47
+        '
+        'cmbNinyo
+        '
+        Me.cmbNinyo.FormattingEnabled = True
+        Me.cmbNinyo.Location = New System.Drawing.Point(32, 574)
+        Me.cmbNinyo.Name = "cmbNinyo"
+        Me.cmbNinyo.Size = New System.Drawing.Size(270, 24)
+        Me.cmbNinyo.TabIndex = 58
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(36, 557)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(130, 17)
+        Me.Label7.TabIndex = 57
+        Me.Label7.Text = "Cedula del Niño(a):"
+        '
+        'txtRelacion
+        '
+        Me.txtRelacion.Location = New System.Drawing.Point(32, 532)
+        Me.txtRelacion.Name = "txtRelacion"
+        Me.txtRelacion.Size = New System.Drawing.Size(270, 22)
+        Me.txtRelacion.TabIndex = 56
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(36, 511)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(160, 17)
+        Me.Label6.TabIndex = 55
+        Me.Label6.Text = "Relación con el Niño(a):"
+        '
+        'txtNumTel2
+        '
+        Me.txtNumTel2.Location = New System.Drawing.Point(32, 484)
+        Me.txtNumTel2.Name = "txtNumTel2"
+        Me.txtNumTel2.Size = New System.Drawing.Size(270, 22)
+        Me.txtNumTel2.TabIndex = 54
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(30, 463)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(150, 17)
+        Me.Label5.TabIndex = 53
+        Me.Label5.Text = "Número deTelefono 2:"
+        '
+        'txtNumTel1
+        '
+        Me.txtNumTel1.Location = New System.Drawing.Point(32, 438)
+        Me.txtNumTel1.Name = "txtNumTel1"
+        Me.txtNumTel1.Size = New System.Drawing.Size(270, 22)
+        Me.txtNumTel1.TabIndex = 52
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(36, 417)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(150, 17)
+        Me.Label4.TabIndex = 51
+        Me.Label4.Text = "Número deTelefono 1:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(30, 371)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(56, 17)
+        Me.Label3.TabIndex = 49
+        Me.Label3.Text = "Distrito:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(29, 326)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 17)
+        Me.Label2.TabIndex = 47
+        Me.Label2.Text = "Cantón:"
+        '
+        'txtDireccion
+        '
+        Me.txtDireccion.Location = New System.Drawing.Point(33, 255)
+        Me.txtDireccion.Name = "txtDireccion"
+        Me.txtDireccion.Size = New System.Drawing.Size(269, 22)
+        Me.txtDireccion.TabIndex = 45
         '
         'btnCancel
         '
@@ -325,129 +427,6 @@ Partial Class FormEncargado
         Me.Label14.TabIndex = 7
         Me.Label14.Text = "Cédula:"
         '
-        'txtDireccion
-        '
-        Me.txtDireccion.Location = New System.Drawing.Point(33, 255)
-        Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(269, 22)
-        Me.txtDireccion.TabIndex = 45
-        '
-        'txtProvincia
-        '
-        Me.txtProvincia.Location = New System.Drawing.Point(33, 301)
-        Me.txtProvincia.Name = "txtProvincia"
-        Me.txtProvincia.Size = New System.Drawing.Size(269, 22)
-        Me.txtProvincia.TabIndex = 46
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(29, 326)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 17)
-        Me.Label2.TabIndex = 47
-        Me.Label2.Text = "Cantón:"
-        '
-        'txtCanton
-        '
-        Me.txtCanton.Location = New System.Drawing.Point(32, 346)
-        Me.txtCanton.Name = "txtCanton"
-        Me.txtCanton.Size = New System.Drawing.Size(270, 22)
-        Me.txtCanton.TabIndex = 48
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(30, 371)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 17)
-        Me.Label3.TabIndex = 49
-        Me.Label3.Text = "Distrito:"
-        '
-        'txtDistrito
-        '
-        Me.txtDistrito.Location = New System.Drawing.Point(32, 392)
-        Me.txtDistrito.Name = "txtDistrito"
-        Me.txtDistrito.Size = New System.Drawing.Size(270, 22)
-        Me.txtDistrito.TabIndex = 50
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(36, 417)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(150, 17)
-        Me.Label4.TabIndex = 51
-        Me.Label4.Text = "Número deTelefono 1:"
-        '
-        'txtNumTel1
-        '
-        Me.txtNumTel1.Location = New System.Drawing.Point(32, 438)
-        Me.txtNumTel1.Name = "txtNumTel1"
-        Me.txtNumTel1.Size = New System.Drawing.Size(270, 22)
-        Me.txtNumTel1.TabIndex = 52
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(30, 463)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(150, 17)
-        Me.Label5.TabIndex = 53
-        Me.Label5.Text = "Número deTelefono 2:"
-        '
-        'txtNumTel2
-        '
-        Me.txtNumTel2.Location = New System.Drawing.Point(32, 484)
-        Me.txtNumTel2.Name = "txtNumTel2"
-        Me.txtNumTel2.Size = New System.Drawing.Size(270, 22)
-        Me.txtNumTel2.TabIndex = 54
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(36, 511)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(160, 17)
-        Me.Label6.TabIndex = 55
-        Me.Label6.Text = "Relación con el Niño(a):"
-        '
-        'txtRelacion
-        '
-        Me.txtRelacion.Location = New System.Drawing.Point(32, 532)
-        Me.txtRelacion.Name = "txtRelacion"
-        Me.txtRelacion.Size = New System.Drawing.Size(270, 22)
-        Me.txtRelacion.TabIndex = 56
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(36, 557)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(130, 17)
-        Me.Label7.TabIndex = 57
-        Me.Label7.Text = "Cedula del Niño(a):"
-        '
-        'cmbNinyo
-        '
-        Me.cmbNinyo.FormattingEnabled = True
-        Me.cmbNinyo.Location = New System.Drawing.Point(32, 574)
-        Me.cmbNinyo.Name = "cmbNinyo"
-        Me.cmbNinyo.Size = New System.Drawing.Size(270, 24)
-        Me.cmbNinyo.TabIndex = 58
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -465,6 +444,30 @@ Partial Class FormEncargado
         Me.TextBuscar.Size = New System.Drawing.Size(287, 22)
         Me.TextBuscar.TabIndex = 51
         '
+        'cmbProvincia
+        '
+        Me.cmbProvincia.FormattingEnabled = True
+        Me.cmbProvincia.Location = New System.Drawing.Point(32, 298)
+        Me.cmbProvincia.Name = "cmbProvincia"
+        Me.cmbProvincia.Size = New System.Drawing.Size(270, 24)
+        Me.cmbProvincia.TabIndex = 59
+        '
+        'cmbCanton
+        '
+        Me.cmbCanton.FormattingEnabled = True
+        Me.cmbCanton.Location = New System.Drawing.Point(32, 347)
+        Me.cmbCanton.Name = "cmbCanton"
+        Me.cmbCanton.Size = New System.Drawing.Size(270, 24)
+        Me.cmbCanton.TabIndex = 60
+        '
+        'cmbDistrito
+        '
+        Me.cmbDistrito.FormattingEnabled = True
+        Me.cmbDistrito.Location = New System.Drawing.Point(33, 389)
+        Me.cmbDistrito.Name = "cmbDistrito"
+        Me.cmbDistrito.Size = New System.Drawing.Size(269, 24)
+        Me.cmbDistrito.TabIndex = 61
+        '
         'FormEncargado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -480,7 +483,7 @@ Partial Class FormEncargado
         Me.Controls.Add(Me.btnAnyadir)
         Me.Controls.Add(Me.EncargadoGridView)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormEncargado"
         Me.Text = "FormEncargado"
         CType(Me.EncargadoGridView, System.ComponentModel.ISupportInitialize).EndInit()
@@ -506,11 +509,8 @@ Partial Class FormEncargado
     Friend WithEvents Label5 As Label
     Friend WithEvents txtNumTel1 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtDistrito As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtCanton As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtProvincia As TextBox
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnSave As Button
@@ -527,4 +527,7 @@ Partial Class FormEncargado
     Friend WithEvents Label14 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBuscar As TextBox
+    Friend WithEvents cmbDistrito As ComboBox
+    Friend WithEvents cmbCanton As ComboBox
+    Friend WithEvents cmbProvincia As ComboBox
 End Class

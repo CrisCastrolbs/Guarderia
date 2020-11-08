@@ -34,7 +34,6 @@ Partial Class FormIngredientePlato
         Me.TextBuscar = New System.Windows.Forms.TextBox()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnAnyadir = New System.Windows.Forms.Button()
         Me.IngredientePlatoGridView = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -177,30 +176,13 @@ Partial Class FormIngredientePlato
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnEditar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnEditar.Location = New System.Drawing.Point(573, 591)
+        Me.btnEditar.Location = New System.Drawing.Point(688, 591)
         Me.btnEditar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(130, 38)
         Me.btnEditar.TabIndex = 73
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = False
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnEliminar.BackColor = System.Drawing.Color.IndianRed
-        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnEliminar.FlatAppearance.BorderSize = 0
-        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Font = New System.Drawing.Font("Ebrima", 10.0!)
-        Me.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnEliminar.Location = New System.Drawing.Point(711, 591)
-        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(130, 38)
-        Me.btnEliminar.TabIndex = 72
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'btnAnyadir
         '
@@ -211,7 +193,7 @@ Partial Class FormIngredientePlato
         Me.btnAnyadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAnyadir.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnAnyadir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnAnyadir.Location = New System.Drawing.Point(435, 591)
+        Me.btnAnyadir.Location = New System.Drawing.Point(550, 591)
         Me.btnAnyadir.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnyadir.Name = "btnAnyadir"
         Me.btnAnyadir.Size = New System.Drawing.Size(130, 38)
@@ -257,7 +239,6 @@ Partial Class FormIngredientePlato
         Me.Controls.Add(Me.TextBuscar)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnEditar)
-        Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnAnyadir)
         Me.Controls.Add(Me.IngredientePlatoGridView)
         Me.Controls.Add(Me.Label1)
@@ -283,7 +264,6 @@ Partial Class FormIngredientePlato
     Friend WithEvents TextBuscar As TextBox
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnEditar As Button
-    Friend WithEvents btnEliminar As Button
     Friend WithEvents btnAnyadir As Button
     Friend WithEvents IngredientePlatoGridView As DataGridView
     Friend WithEvents Label1 As Label

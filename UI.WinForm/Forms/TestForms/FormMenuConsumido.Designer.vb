@@ -24,7 +24,7 @@ Partial Class FormMenuConsumido
     Private Sub InitializeComponent()
         Me.MenuConsumidoGridView = New System.Windows.Forms.DataGridView()
         Me.PanelMenuConsumido = New System.Windows.Forms.Panel()
-        Me.cmbNombrePlato = New System.Windows.Forms.ComboBox()
+        Me.cmbIdPlatoMenu = New System.Windows.Forms.ComboBox()
         Me.cmbNombreNinyo = New System.Windows.Forms.ComboBox()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
@@ -60,7 +60,7 @@ Partial Class FormMenuConsumido
         'PanelMenuConsumido
         '
         Me.PanelMenuConsumido.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.PanelMenuConsumido.Controls.Add(Me.cmbNombrePlato)
+        Me.PanelMenuConsumido.Controls.Add(Me.cmbIdPlatoMenu)
         Me.PanelMenuConsumido.Controls.Add(Me.cmbNombreNinyo)
         Me.PanelMenuConsumido.Controls.Add(Me.btnCancel)
         Me.PanelMenuConsumido.Controls.Add(Me.btnSave)
@@ -73,13 +73,13 @@ Partial Class FormMenuConsumido
         Me.PanelMenuConsumido.Size = New System.Drawing.Size(335, 642)
         Me.PanelMenuConsumido.TabIndex = 76
         '
-        'cmbNombrePlato
+        'cmbIdPlatoMenu
         '
-        Me.cmbNombrePlato.FormattingEnabled = True
-        Me.cmbNombrePlato.Location = New System.Drawing.Point(26, 316)
-        Me.cmbNombrePlato.Name = "cmbNombrePlato"
-        Me.cmbNombrePlato.Size = New System.Drawing.Size(269, 24)
-        Me.cmbNombrePlato.TabIndex = 45
+        Me.cmbIdPlatoMenu.FormattingEnabled = True
+        Me.cmbIdPlatoMenu.Location = New System.Drawing.Point(26, 316)
+        Me.cmbIdPlatoMenu.Name = "cmbIdPlatoMenu"
+        Me.cmbIdPlatoMenu.Size = New System.Drawing.Size(269, 24)
+        Me.cmbIdPlatoMenu.TabIndex = 45
         '
         'cmbNombreNinyo
         '
@@ -146,9 +146,9 @@ Partial Class FormMenuConsumido
         Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(23, 273)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(117, 17)
+        Me.Label10.Size = New System.Drawing.Size(82, 17)
         Me.Label10.TabIndex = 1
-        Me.Label10.Text = "Nombre del Plato"
+        Me.Label10.Text = "Id del Plato:"
         '
         'Label2
         '
@@ -273,7 +273,7 @@ Partial Class FormMenuConsumido
 
     Friend WithEvents MenuConsumidoGridView As DataGridView
     Friend WithEvents PanelMenuConsumido As Panel
-    Friend WithEvents cmbNombrePlato As ComboBox
+    Friend WithEvents cmbIdPlatoMenu As ComboBox
     Friend WithEvents cmbNombreNinyo As ComboBox
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnSave As Button

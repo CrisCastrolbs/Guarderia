@@ -28,19 +28,17 @@ Partial Class FormRespPago
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBuscar = New System.Windows.Forms.TextBox()
         Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnAnyadir = New System.Windows.Forms.Button()
         Me.PanelRespPago = New System.Windows.Forms.Panel()
+        Me.chkNo = New System.Windows.Forms.CheckBox()
+        Me.chkSi = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtRelacion = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtNumTel1 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtDistrito = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtCanton = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtProvincia = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
@@ -55,8 +53,9 @@ Partial Class FormRespPago
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.chkSi = New System.Windows.Forms.CheckBox()
-        Me.chkNo = New System.Windows.Forms.CheckBox()
+        Me.cmbDistrito = New System.Windows.Forms.ComboBox()
+        Me.cmbCanton = New System.Windows.Forms.ComboBox()
+        Me.cmbProvincia = New System.Windows.Forms.ComboBox()
         CType(Me.RespPagoGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelRespPago.SuspendLayout()
         Me.SuspendLayout()
@@ -130,30 +129,13 @@ Partial Class FormRespPago
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnEditar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnEditar.Location = New System.Drawing.Point(585, 591)
+        Me.btnEditar.Location = New System.Drawing.Point(698, 591)
         Me.btnEditar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(130, 38)
         Me.btnEditar.TabIndex = 55
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = False
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnEliminar.BackColor = System.Drawing.Color.IndianRed
-        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnEliminar.FlatAppearance.BorderSize = 0
-        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Font = New System.Drawing.Font("Ebrima", 10.0!)
-        Me.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnEliminar.Location = New System.Drawing.Point(723, 591)
-        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(130, 38)
-        Me.btnEliminar.TabIndex = 54
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'btnAnyadir
         '
@@ -164,7 +146,7 @@ Partial Class FormRespPago
         Me.btnAnyadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAnyadir.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnAnyadir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnAnyadir.Location = New System.Drawing.Point(447, 591)
+        Me.btnAnyadir.Location = New System.Drawing.Point(560, 591)
         Me.btnAnyadir.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAnyadir.Name = "btnAnyadir"
         Me.btnAnyadir.Size = New System.Drawing.Size(130, 38)
@@ -175,6 +157,9 @@ Partial Class FormRespPago
         'PanelRespPago
         '
         Me.PanelRespPago.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.PanelRespPago.Controls.Add(Me.cmbDistrito)
+        Me.PanelRespPago.Controls.Add(Me.cmbCanton)
+        Me.PanelRespPago.Controls.Add(Me.cmbProvincia)
         Me.PanelRespPago.Controls.Add(Me.chkNo)
         Me.PanelRespPago.Controls.Add(Me.chkSi)
         Me.PanelRespPago.Controls.Add(Me.Label7)
@@ -182,11 +167,8 @@ Partial Class FormRespPago
         Me.PanelRespPago.Controls.Add(Me.Label6)
         Me.PanelRespPago.Controls.Add(Me.txtNumTel1)
         Me.PanelRespPago.Controls.Add(Me.Label4)
-        Me.PanelRespPago.Controls.Add(Me.txtDistrito)
         Me.PanelRespPago.Controls.Add(Me.Label3)
-        Me.PanelRespPago.Controls.Add(Me.txtCanton)
         Me.PanelRespPago.Controls.Add(Me.Label8)
-        Me.PanelRespPago.Controls.Add(Me.txtProvincia)
         Me.PanelRespPago.Controls.Add(Me.txtDireccion)
         Me.PanelRespPago.Controls.Add(Me.btnCancel)
         Me.PanelRespPago.Controls.Add(Me.btnSave)
@@ -206,6 +188,26 @@ Partial Class FormRespPago
         Me.PanelRespPago.Name = "PanelRespPago"
         Me.PanelRespPago.Size = New System.Drawing.Size(359, 642)
         Me.PanelRespPago.TabIndex = 56
+        '
+        'chkNo
+        '
+        Me.chkNo.AutoSize = True
+        Me.chkNo.Location = New System.Drawing.Point(104, 542)
+        Me.chkNo.Name = "chkNo"
+        Me.chkNo.Size = New System.Drawing.Size(48, 21)
+        Me.chkNo.TabIndex = 59
+        Me.chkNo.Text = "No"
+        Me.chkNo.UseVisualStyleBackColor = True
+        '
+        'chkSi
+        '
+        Me.chkSi.AutoSize = True
+        Me.chkSi.Location = New System.Drawing.Point(32, 542)
+        Me.chkSi.Name = "chkSi"
+        Me.chkSi.Size = New System.Drawing.Size(42, 21)
+        Me.chkSi.TabIndex = 58
+        Me.chkSi.Text = "Sí"
+        Me.chkSi.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -254,13 +256,6 @@ Partial Class FormRespPago
         Me.Label4.TabIndex = 51
         Me.Label4.Text = "Número deTelefono 1:"
         '
-        'txtDistrito
-        '
-        Me.txtDistrito.Location = New System.Drawing.Point(32, 392)
-        Me.txtDistrito.Name = "txtDistrito"
-        Me.txtDistrito.Size = New System.Drawing.Size(270, 22)
-        Me.txtDistrito.TabIndex = 50
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -272,13 +267,6 @@ Partial Class FormRespPago
         Me.Label3.TabIndex = 49
         Me.Label3.Text = "Distrito:"
         '
-        'txtCanton
-        '
-        Me.txtCanton.Location = New System.Drawing.Point(32, 346)
-        Me.txtCanton.Name = "txtCanton"
-        Me.txtCanton.Size = New System.Drawing.Size(270, 22)
-        Me.txtCanton.TabIndex = 48
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -289,13 +277,6 @@ Partial Class FormRespPago
         Me.Label8.Size = New System.Drawing.Size(57, 17)
         Me.Label8.TabIndex = 47
         Me.Label8.Text = "Cantón:"
-        '
-        'txtProvincia
-        '
-        Me.txtProvincia.Location = New System.Drawing.Point(33, 301)
-        Me.txtProvincia.Name = "txtProvincia"
-        Me.txtProvincia.Size = New System.Drawing.Size(269, 22)
-        Me.txtProvincia.TabIndex = 46
         '
         'txtDireccion
         '
@@ -437,25 +418,29 @@ Partial Class FormRespPago
         Me.Label14.TabIndex = 7
         Me.Label14.Text = "Cédula:"
         '
-        'chkSi
+        'cmbDistrito
         '
-        Me.chkSi.AutoSize = True
-        Me.chkSi.Location = New System.Drawing.Point(32, 542)
-        Me.chkSi.Name = "chkSi"
-        Me.chkSi.Size = New System.Drawing.Size(42, 21)
-        Me.chkSi.TabIndex = 58
-        Me.chkSi.Text = "Sí"
-        Me.chkSi.UseVisualStyleBackColor = True
+        Me.cmbDistrito.FormattingEnabled = True
+        Me.cmbDistrito.Location = New System.Drawing.Point(33, 390)
+        Me.cmbDistrito.Name = "cmbDistrito"
+        Me.cmbDistrito.Size = New System.Drawing.Size(269, 24)
+        Me.cmbDistrito.TabIndex = 64
         '
-        'chkNo
+        'cmbCanton
         '
-        Me.chkNo.AutoSize = True
-        Me.chkNo.Location = New System.Drawing.Point(104, 542)
-        Me.chkNo.Name = "chkNo"
-        Me.chkNo.Size = New System.Drawing.Size(48, 21)
-        Me.chkNo.TabIndex = 59
-        Me.chkNo.Text = "No"
-        Me.chkNo.UseVisualStyleBackColor = True
+        Me.cmbCanton.FormattingEnabled = True
+        Me.cmbCanton.Location = New System.Drawing.Point(32, 348)
+        Me.cmbCanton.Name = "cmbCanton"
+        Me.cmbCanton.Size = New System.Drawing.Size(270, 24)
+        Me.cmbCanton.TabIndex = 63
+        '
+        'cmbProvincia
+        '
+        Me.cmbProvincia.FormattingEnabled = True
+        Me.cmbProvincia.Location = New System.Drawing.Point(32, 299)
+        Me.cmbProvincia.Name = "cmbProvincia"
+        Me.cmbProvincia.Size = New System.Drawing.Size(270, 24)
+        Me.cmbProvincia.TabIndex = 62
         '
         'FormRespPago
         '
@@ -465,7 +450,6 @@ Partial Class FormRespPago
         Me.ClientSize = New System.Drawing.Size(1245, 642)
         Me.Controls.Add(Me.PanelRespPago)
         Me.Controls.Add(Me.btnEditar)
-        Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnAnyadir)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBuscar)
@@ -488,7 +472,6 @@ Partial Class FormRespPago
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBuscar As TextBox
     Friend WithEvents btnEditar As Button
-    Friend WithEvents btnEliminar As Button
     Friend WithEvents btnAnyadir As Button
     Friend WithEvents PanelRespPago As Panel
     Friend WithEvents chkNo As CheckBox
@@ -498,11 +481,8 @@ Partial Class FormRespPago
     Friend WithEvents Label6 As Label
     Friend WithEvents txtNumTel1 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtDistrito As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtCanton As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents txtProvincia As TextBox
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnSave As Button
@@ -517,4 +497,7 @@ Partial Class FormRespPago
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtCedula As TextBox
     Friend WithEvents Label14 As Label
+    Friend WithEvents cmbDistrito As ComboBox
+    Friend WithEvents cmbCanton As ComboBox
+    Friend WithEvents cmbProvincia As ComboBox
 End Class
