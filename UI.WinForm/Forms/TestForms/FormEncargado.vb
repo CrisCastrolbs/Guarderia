@@ -1,6 +1,6 @@
 ﻿Imports Infrastructure.Common
 
-Public Class Form3
+Public Class FormEncargado
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
@@ -11,7 +11,7 @@ Public Class Form3
     Private Sub managePermissions()
 
         If (ActiveUser.c_position = Positions.cocinera) Then
-            btnRemove.Enabled = False
+            btnEliminar.Enabled = False
         End If
     End Sub
 End Class

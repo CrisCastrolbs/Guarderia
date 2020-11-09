@@ -47,8 +47,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CircularProgressBar">
-      <HintPath>..\..\..\..\..\..\Application Files\CircularProgressBar.dll</HintPath>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -61,8 +61,8 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="WinFormAnimation">
-      <HintPath>..\..\..\..\..\..\Application Files\WinFormAnimation.dll</HintPath>
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -79,23 +79,59 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\TestForms\FormAlergiaInfante.Designer.vb">
+      <DependentUpon>FormAlergiaInfante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormAlergiaInfante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormIngredientePlato.Designer.vb">
+      <DependentUpon>FormIngredientePlato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormIngredientePlato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormMenuConsumido.Designer.vb">
+      <DependentUpon>FormMenuConsumido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormMenuConsumido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormPagoMensual.Designer.vb">
+      <DependentUpon>FormPagoMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormPagoMensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormRespPago.Designer.vb">
+      <DependentUpon>FormRespPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForms\FormRespPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Helpers\ConvertItem.vb" />
-    <Compile Include="Forms\TestForms\Form1.designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Forms\TestForms\FormNinyo.designer.vb">
+      <DependentUpon>FormNinyo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TestForms\Form1.vb">
+    <Compile Include="Forms\TestForms\FormNinyo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TestForms\Form2.designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Forms\TestForms\FormMatricula.designer.vb">
+      <DependentUpon>FormMatricula.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TestForms\Form2.vb">
+    <Compile Include="Forms\TestForms\FormMatricula.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TestForms\Form3.designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="Forms\TestForms\FormEncargado.designer.vb">
+      <DependentUpon>FormEncargado.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TestForms\Form3.vb">
+    <Compile Include="Forms\TestForms\FormEncargado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\User\FormUsers.designer.vb">
@@ -158,14 +194,32 @@
     <Compile Include="Helpers\DataValidation.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\TestForms\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\TestForms\FormAlergiaInfante.resx">
+      <DependentUpon>FormAlergiaInfante.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TestForms\Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\TestForms\FormIngredientePlato.resx">
+      <DependentUpon>FormIngredientePlato.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TestForms\Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\TestForms\FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\FormMenuConsumido.resx">
+      <DependentUpon>FormMenuConsumido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\FormNinyo.resx">
+      <DependentUpon>FormNinyo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\FormMatricula.resx">
+      <DependentUpon>FormMatricula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\FormEncargado.resx">
+      <DependentUpon>FormEncargado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\FormPagoMensual.resx">
+      <DependentUpon>FormPagoMensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForms\FormRespPago.resx">
+      <DependentUpon>FormRespPago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormUsers.resx">
       <DependentUpon>FormUsers.vb</DependentUpon>
@@ -224,6 +278,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\defaultImageProfileUser.png" />
   </ItemGroup>
   <ItemGroup>
