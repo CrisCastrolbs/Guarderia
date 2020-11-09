@@ -60,21 +60,21 @@ Public Class IngredienteRepository
         Return listIngrediente
     End Function
 
-    '//buscar por valor (buscar por cedula)
-    Public Function obtenerPorValorInt(value As String) As IEnumerable(Of Ingrediente) Implements ICrudRepositoryString(Of Ingrediente).obtenerPorValorInt
-        Dim parameters As New List(Of SqlParameter)
-        parameters.Add(New SqlParameter("@findValue", value))
-        Dim result = ExecuteReader("SP_selectIdIngrediente", parameters)
-        Dim listIngrediente = New List(Of Ingrediente)
-        For Each item As DataRow In result.Rows
-            Dim ingredienteEntity = New Ingrediente 'crear objeto ifante
-            ingredienteEntity.IdIngrediente = Convert.ToInt32(item(0))
+    ''//buscar por valor (buscar por cedula)
+    'Public Function obtenerPorValorInt(value As String) As IEnumerable(Of Ingrediente) Implements ICrudRepositoryString(Of Ingrediente).obtenerPorValorInt
+    '    Dim parameters As New List(Of SqlParameter)
+    '    parameters.Add(New SqlParameter("@findValue", value))
+    '    Dim result = ExecuteReader("SP_selectIdIngrediente", parameters)
+    '    Dim listIngrediente = New List(Of Ingrediente)
+    '    For Each item As DataRow In result.Rows
+    '        Dim ingredienteEntity = New Ingrediente 'crear objeto ifante
+    '        ingredienteEntity.IdIngrediente = Convert.ToInt32(item(0))
 
-            'agregar entidad infante a la lista
-            listIngrediente.Add(ingredienteEntity)
-        Next
-        Return listIngrediente
-    End Function
+    '        'agregar entidad infante a la lista
+    '        listIngrediente.Add(ingredienteEntity)
+    '    Next
+    '    Return listIngrediente
+    'End Function
 
 
 
