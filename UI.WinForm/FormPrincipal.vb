@@ -174,7 +174,7 @@ Public Class FormPrincipal
             btnUsers.Enabled = False
         End If
         If ActiveUser.c_position = Positions.cocinera Then
-            btnPacient.Enabled = False
+            btnInfante.Enabled = False
             btnMatricula.Enabled = False
             btnMenu.Enabled = True
             btnUsers.Enabled = False
@@ -191,9 +191,9 @@ Public Class FormPrincipal
     End Sub
 
     'BUTTONS TO OPEN FORMS "
-    Private Sub btnPacient_Click(sender As Object, e As EventArgs) Handles btnPacient.Click
+    Private Sub btnInfante_Click(sender As Object, e As EventArgs) Handles btnInfante.Click
         openFormOnPanel(Of FormNinyo)()
-        activatedButton(btnPacient)
+        activatedButton(btnInfante)
     End Sub
 
     Private Sub btnClinicalHistory_Click(sender As Object, e As EventArgs) Handles btnMatricula.Click

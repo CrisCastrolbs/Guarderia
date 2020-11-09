@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormNinyo
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormNinyo
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.NinyosGridView = New System.Windows.Forms.DataGridView()
@@ -44,16 +44,16 @@ Partial Class FormNinyo
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtCedula = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.BtnAnyadir = New System.Windows.Forms.Button()
-        Me.BtnEditar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblTotalNinyas = New System.Windows.Forms.Label()
         Me.lblTotalNinyos = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtBuscarInt = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtBuscarVachar = New System.Windows.Forms.TextBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnAñadir = New System.Windows.Forms.Button()
+        Me.txtSearch2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.NinyosGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelNinyo.SuspendLayout()
         Me.SuspendLayout()
@@ -61,12 +61,12 @@ Partial Class FormNinyo
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(72, 42)
+        Me.Label1.Location = New System.Drawing.Point(41, 0)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(231, 29)
+        Me.Label1.Size = New System.Drawing.Size(249, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Registro de Niño(a)"
         '
@@ -75,15 +75,18 @@ Partial Class FormNinyo
         Me.NinyosGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.NinyosGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.NinyosGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NinyosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.NinyosGridView.Location = New System.Drawing.Point(44, 106)
-        Me.NinyosGridView.Margin = New System.Windows.Forms.Padding(4)
+        Me.NinyosGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.NinyosGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke
+        Me.NinyosGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.NinyosGridView.ColumnHeadersHeight = 29
+        Me.NinyosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.NinyosGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.NinyosGridView.Location = New System.Drawing.Point(33, 106)
         Me.NinyosGridView.Name = "NinyosGridView"
         Me.NinyosGridView.RowHeadersWidth = 51
-        Me.NinyosGridView.Size = New System.Drawing.Size(803, 454)
-        Me.NinyosGridView.TabIndex = 1
+        Me.NinyosGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.NinyosGridView.Size = New System.Drawing.Size(649, 353)
+        Me.NinyosGridView.TabIndex = 50
         '
         'btnAdd
         '
@@ -94,7 +97,7 @@ Partial Class FormNinyo
         Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdd.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnAdd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnAdd.Location = New System.Drawing.Point(1025, 91)
+        Me.btnAdd.Location = New System.Drawing.Point(860, 91)
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(181, 43)
@@ -111,7 +114,7 @@ Partial Class FormNinyo
         Me.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRemove.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnRemove.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnRemove.Location = New System.Drawing.Point(1025, 192)
+        Me.btnRemove.Location = New System.Drawing.Point(860, 192)
         Me.btnRemove.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Size = New System.Drawing.Size(181, 43)
@@ -128,7 +131,7 @@ Partial Class FormNinyo
         Me.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEdit.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnEdit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnEdit.Location = New System.Drawing.Point(1025, 142)
+        Me.btnEdit.Location = New System.Drawing.Point(860, 142)
         Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(181, 43)
@@ -171,16 +174,18 @@ Partial Class FormNinyo
         Me.PanelNinyo.Controls.Add(Me.txtCedula)
         Me.PanelNinyo.Controls.Add(Me.Label14)
         Me.PanelNinyo.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelNinyo.Location = New System.Drawing.Point(876, 0)
+        Me.PanelNinyo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.PanelNinyo.Location = New System.Drawing.Point(702, 0)
         Me.PanelNinyo.Name = "PanelNinyo"
-        Me.PanelNinyo.Size = New System.Drawing.Size(369, 642)
-        Me.PanelNinyo.TabIndex = 46
+        Me.PanelNinyo.Size = New System.Drawing.Size(348, 551)
+        Me.PanelNinyo.TabIndex = 45
         '
         'dateNacimiento
         '
-        Me.dateNacimiento.Location = New System.Drawing.Point(39, 297)
+        Me.dateNacimiento.Location = New System.Drawing.Point(39, 305)
+        Me.dateNacimiento.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dateNacimiento.Name = "dateNacimiento"
-        Me.dateNacimiento.Size = New System.Drawing.Size(270, 22)
+        Me.dateNacimiento.Size = New System.Drawing.Size(271, 23)
         Me.dateNacimiento.TabIndex = 45
         '
         'btnCancel
@@ -190,8 +195,9 @@ Partial Class FormNinyo
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.ForeColor = System.Drawing.Color.White
         Me.btnCancel.Location = New System.Drawing.Point(39, 415)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(130, 49)
+        Me.btnCancel.Size = New System.Drawing.Size(131, 49)
         Me.btnCancel.TabIndex = 24
         Me.btnCancel.Text = "Cancelar"
         Me.btnCancel.UseVisualStyleBackColor = False
@@ -202,11 +208,11 @@ Partial Class FormNinyo
         Me.cmbSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbSexo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbSexo.FormattingEnabled = True
-        Me.cmbSexo.Items.AddRange(New Object() {"Cocinera", "Administrador", "Recepcionista"})
-        Me.cmbSexo.Location = New System.Drawing.Point(40, 343)
+        Me.cmbSexo.Items.AddRange(New Object() {"Femenino", "Masculino"})
+        Me.cmbSexo.Location = New System.Drawing.Point(40, 352)
         Me.cmbSexo.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbSexo.Name = "cmbSexo"
-        Me.cmbSexo.Size = New System.Drawing.Size(269, 28)
+        Me.cmbSexo.Size = New System.Drawing.Size(269, 24)
         Me.cmbSexo.TabIndex = 44
         '
         'btnSave
@@ -216,8 +222,9 @@ Partial Class FormNinyo
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.ForeColor = System.Drawing.Color.White
         Me.btnSave.Location = New System.Drawing.Point(179, 415)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(130, 49)
+        Me.btnSave.Size = New System.Drawing.Size(131, 49)
         Me.btnSave.TabIndex = 23
         Me.btnSave.Text = "Guardar"
         Me.btnSave.UseVisualStyleBackColor = False
@@ -226,9 +233,9 @@ Partial Class FormNinyo
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(36, 224)
+        Me.Label9.Location = New System.Drawing.Point(36, 233)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(123, 17)
@@ -242,7 +249,7 @@ Partial Class FormNinyo
         Me.Label11.ForeColor = System.Drawing.Color.White
         Me.Label11.Location = New System.Drawing.Point(33, 22)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(240, 39)
+        Me.Label11.Size = New System.Drawing.Size(191, 31)
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "Mantenimiento"
         '
@@ -251,7 +258,7 @@ Partial Class FormNinyo
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(36, 276)
+        Me.Label10.Location = New System.Drawing.Point(36, 284)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(145, 17)
         Me.Label10.TabIndex = 1
@@ -259,9 +266,10 @@ Partial Class FormNinyo
         '
         'txtApellido2
         '
-        Me.txtApellido2.Location = New System.Drawing.Point(39, 251)
+        Me.txtApellido2.Location = New System.Drawing.Point(39, 256)
+        Me.txtApellido2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtApellido2.Name = "txtApellido2"
-        Me.txtApellido2.Size = New System.Drawing.Size(270, 22)
+        Me.txtApellido2.Size = New System.Drawing.Size(271, 23)
         Me.txtApellido2.TabIndex = 2
         '
         'lbl2
@@ -269,7 +277,7 @@ Partial Class FormNinyo
         Me.lbl2.AutoSize = True
         Me.lbl2.BackColor = System.Drawing.Color.Transparent
         Me.lbl2.ForeColor = System.Drawing.Color.White
-        Me.lbl2.Location = New System.Drawing.Point(36, 178)
+        Me.lbl2.Location = New System.Drawing.Point(36, 185)
         Me.lbl2.Name = "lbl2"
         Me.lbl2.Size = New System.Drawing.Size(107, 17)
         Me.lbl2.TabIndex = 11
@@ -280,7 +288,7 @@ Partial Class FormNinyo
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(36, 322)
+        Me.Label12.Location = New System.Drawing.Point(36, 331)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(43, 17)
         Me.Label12.TabIndex = 3
@@ -288,9 +296,10 @@ Partial Class FormNinyo
         '
         'txtApellido1
         '
-        Me.txtApellido1.Location = New System.Drawing.Point(39, 198)
+        Me.txtApellido1.Location = New System.Drawing.Point(39, 204)
+        Me.txtApellido1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtApellido1.Name = "txtApellido1"
-        Me.txtApellido1.Size = New System.Drawing.Size(270, 22)
+        Me.txtApellido1.Size = New System.Drawing.Size(271, 23)
         Me.txtApellido1.TabIndex = 10
         '
         'Label13
@@ -298,7 +307,7 @@ Partial Class FormNinyo
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(36, 132)
+        Me.Label13.Location = New System.Drawing.Point(36, 135)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(62, 17)
         Me.Label13.TabIndex = 9
@@ -306,16 +315,18 @@ Partial Class FormNinyo
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(39, 152)
+        Me.txtNombre.Location = New System.Drawing.Point(39, 156)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(270, 22)
+        Me.txtNombre.Size = New System.Drawing.Size(271, 23)
         Me.txtNombre.TabIndex = 8
         '
         'txtCedula
         '
         Me.txtCedula.Location = New System.Drawing.Point(39, 106)
+        Me.txtCedula.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(270, 22)
+        Me.txtCedula.Size = New System.Drawing.Size(271, 23)
         Me.txtCedula.TabIndex = 6
         '
         'Label14
@@ -329,127 +340,142 @@ Partial Class FormNinyo
         Me.Label14.TabIndex = 7
         Me.Label14.Text = "Cédula:"
         '
-        'BtnAnyadir
-        '
-        Me.BtnAnyadir.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnAnyadir.BackColor = System.Drawing.Color.SeaGreen
-        Me.BtnAnyadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnAnyadir.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.BtnAnyadir.ForeColor = System.Drawing.SystemColors.Window
-        Me.BtnAnyadir.Location = New System.Drawing.Point(562, 592)
-        Me.BtnAnyadir.Name = "BtnAnyadir"
-        Me.BtnAnyadir.Size = New System.Drawing.Size(130, 38)
-        Me.BtnAnyadir.TabIndex = 49
-        Me.BtnAnyadir.Text = "Añadir"
-        Me.BtnAnyadir.UseVisualStyleBackColor = False
-        '
-        'BtnEditar
-        '
-        Me.BtnEditar.BackColor = System.Drawing.Color.SteelBlue
-        Me.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.BtnEditar.ForeColor = System.Drawing.SystemColors.Window
-        Me.BtnEditar.Location = New System.Drawing.Point(698, 592)
-        Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(130, 38)
-        Me.BtnEditar.TabIndex = 50
-        Me.BtnEditar.Text = "Editar"
-        Me.BtnEditar.UseVisualStyleBackColor = False
-        '
         'Label3
         '
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label3.Location = New System.Drawing.Point(40, 592)
+        Me.Label3.Location = New System.Drawing.Point(30, 484)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(99, 20)
-        Me.Label3.TabIndex = 51
+        Me.Label3.Size = New System.Drawing.Size(84, 17)
+        Me.Label3.TabIndex = 52
         Me.Label3.Text = "Total Niñas:"
         '
         'Label4
         '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!)
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(273, 595)
+        Me.Label4.Location = New System.Drawing.Point(30, 516)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 20)
+        Me.Label4.Size = New System.Drawing.Size(84, 17)
         Me.Label4.TabIndex = 52
         Me.Label4.Text = "Total Niños:"
         '
         'lblTotalNinyas
         '
+        Me.lblTotalNinyas.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblTotalNinyas.AutoSize = True
         Me.lblTotalNinyas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalNinyas.ForeColor = System.Drawing.Color.Red
-        Me.lblTotalNinyas.Location = New System.Drawing.Point(160, 590)
+        Me.lblTotalNinyas.Location = New System.Drawing.Point(120, 484)
         Me.lblTotalNinyas.Name = "lblTotalNinyas"
-        Me.lblTotalNinyas.Size = New System.Drawing.Size(72, 24)
-        Me.lblTotalNinyas.TabIndex = 53
+        Me.lblTotalNinyas.Size = New System.Drawing.Size(57, 18)
+        Me.lblTotalNinyas.TabIndex = 52
         Me.lblTotalNinyas.Text = "Label5"
         '
         'lblTotalNinyos
         '
+        Me.lblTotalNinyos.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblTotalNinyos.AutoSize = True
         Me.lblTotalNinyos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold)
         Me.lblTotalNinyos.ForeColor = System.Drawing.Color.Red
-        Me.lblTotalNinyos.Location = New System.Drawing.Point(378, 590)
+        Me.lblTotalNinyos.Location = New System.Drawing.Point(120, 516)
         Me.lblTotalNinyos.Name = "lblTotalNinyos"
-        Me.lblTotalNinyos.Size = New System.Drawing.Size(72, 24)
-        Me.lblTotalNinyos.TabIndex = 54
+        Me.lblTotalNinyos.Size = New System.Drawing.Size(57, 18)
+        Me.lblTotalNinyos.TabIndex = 52
         Me.lblTotalNinyos.Text = "Label5"
         '
-        'Label5
+        'txtSearch
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label5.Location = New System.Drawing.Point(458, 61)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(96, 17)
-        Me.Label5.TabIndex = 96
-        Me.Label5.Text = "Buscar por Id:"
+        Me.txtSearch.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtSearch.Location = New System.Drawing.Point(33, 63)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(293, 23)
+        Me.txtSearch.TabIndex = 48
         '
-        'txtBuscarInt
+        'Label7
         '
-        Me.txtBuscarInt.Location = New System.Drawing.Point(560, 58)
-        Me.txtBuscarInt.Name = "txtBuscarInt"
-        Me.txtBuscarInt.Size = New System.Drawing.Size(288, 22)
-        Me.txtBuscarInt.TabIndex = 95
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(30, 43)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(259, 17)
+        Me.Label7.TabIndex = 49
+        Me.Label7.Text = "Búsqueda por Cédula:  (presione enter)"
         '
-        'Label15
+        'btnEditar
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label15.Location = New System.Drawing.Point(458, 27)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(56, 17)
-        Me.Label15.TabIndex = 94
-        Me.Label15.Text = "Buscar:"
+        Me.btnEditar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnEditar.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnEditar.FlatAppearance.BorderSize = 0
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.btnEditar.ForeColor = System.Drawing.Color.White
+        Me.btnEditar.Location = New System.Drawing.Point(552, 477)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(130, 38)
+        Me.btnEditar.TabIndex = 52
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = False
         '
-        'txtBuscarVachar
+        'btnAñadir
         '
-        Me.txtBuscarVachar.Location = New System.Drawing.Point(560, 22)
-        Me.txtBuscarVachar.Name = "txtBuscarVachar"
-        Me.txtBuscarVachar.Size = New System.Drawing.Size(287, 22)
-        Me.txtBuscarVachar.TabIndex = 93
+        Me.btnAñadir.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAñadir.BackColor = System.Drawing.Color.SeaGreen
+        Me.btnAñadir.FlatAppearance.BorderSize = 0
+        Me.btnAñadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAñadir.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.btnAñadir.ForeColor = System.Drawing.Color.White
+        Me.btnAñadir.Location = New System.Drawing.Point(416, 477)
+        Me.btnAñadir.Name = "btnAñadir"
+        Me.btnAñadir.Size = New System.Drawing.Size(130, 38)
+        Me.btnAñadir.TabIndex = 52
+        Me.btnAñadir.Text = "Añadir"
+        Me.btnAñadir.UseVisualStyleBackColor = False
+        '
+        'txtSearch2
+        '
+        Me.txtSearch2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtSearch2.Location = New System.Drawing.Point(389, 63)
+        Me.txtSearch2.Name = "txtSearch2"
+        Me.txtSearch2.Size = New System.Drawing.Size(293, 23)
+        Me.txtSearch2.TabIndex = 53
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(386, 43)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(248, 17)
+        Me.Label2.TabIndex = 54
+        Me.Label2.Text = "Búsqueda:  (Nombre, Apellidos, Sexo)"
         '
         'FormNinyo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1245, 642)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtBuscarInt)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.txtBuscarVachar)
+        Me.ClientSize = New System.Drawing.Size(1050, 551)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtSearch2)
+        Me.Controls.Add(Me.btnEditar)
+        Me.Controls.Add(Me.btnAñadir)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.lblTotalNinyos)
         Me.Controls.Add(Me.lblTotalNinyas)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.BtnEditar)
-        Me.Controls.Add(Me.BtnAnyadir)
         Me.Controls.Add(Me.PanelNinyo)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnEdit)
@@ -457,8 +483,10 @@ Partial Class FormNinyo
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.NinyosGridView)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormNinyo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FormCreateNinyo"
         CType(Me.NinyosGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelNinyo.ResumeLayout(False)
@@ -469,7 +497,6 @@ Partial Class FormNinyo
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents NinyosGridView As DataGridView
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnRemove As Button
     Friend WithEvents btnEdit As Button
@@ -490,14 +517,15 @@ Partial Class FormNinyo
     Friend WithEvents txtCedula As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents dateNacimiento As DateTimePicker
-    Friend WithEvents BtnAnyadir As Button
-    Friend WithEvents BtnEditar As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents lblTotalNinyas As Label
     Friend WithEvents lblTotalNinyos As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents txtBuscarInt As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents txtBuscarVachar As TextBox
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents btnEditar As Button
+    Friend WithEvents btnAñadir As Button
+    Friend WithEvents NinyosGridView As DataGridView
+    Friend WithEvents txtSearch2 As TextBox
+    Friend WithEvents Label2 As Label
 End Class

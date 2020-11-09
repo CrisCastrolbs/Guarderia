@@ -1,5 +1,5 @@
 ﻿Imports Infrastructure.DataAccess
-Imports Infrastructure.Common
+
 Imports Domain.ValueObjects
 Imports System.ComponentModel.DataAnnotations
 
@@ -9,7 +9,7 @@ Public Class InfanteModel
     Private _Nombre As String
     Private _Apellido1 As String
     Private _Apellido2 As String
-    Private _FechaNacimiento As Date
+    Private _FechaNac As Date
     Private _Sexo As String
     Private _state As EntityState
     Private _editInfante As Boolean = False
@@ -60,12 +60,12 @@ Public Class InfanteModel
         End Set
     End Property
 
-    Public Property FechaNacimiento As Date
+    Public Property FechaNac As Date
         Get
-            Return _FechaNacimiento
+            Return _FechaNac
         End Get
         Set(value As Date)
-            _FechaNacimiento = value
+            _FechaNac = value
         End Set
     End Property
 
@@ -113,9 +113,9 @@ Public Class InfanteModel
                 Case EntityState.Edited
                     infanteRepository.editar(infanteEntity())
                     result = "Editado con éxito"
-                'Case EntityState.Removed
-                '    infanteRepository.eliminar(CedulaInfante)
-                '    result = "Eliminado con éxito"
+                    'Case EntityState.Removed
+                    '    infanteRepository.eliminar(CedulaInfante)
+                    '    result = "Eliminado con éxito"
             End Select
 
         Catch ex As Exception
@@ -136,7 +136,7 @@ Public Class InfanteModel
         infanteObject.Nombre = Nombre
         infanteObject.Apellido1 = Apellido1
         infanteObject.Apellido2 = Apellido2
-        infanteObject.FechaNacimiento = FechaNacimiento
+        infanteObject.FechaNac = FechaNac
         infanteObject.Sexo = Sexo
         Return infanteObject
     End Function
@@ -151,7 +151,7 @@ Public Class InfanteModel
                          .Nombre = item.Nombre,
                          .Apellido1 = item.Apellido1,
                          .Apellido2 = item.Apellido2,
-                         .FechaNacimiento = item.FechaNacimiento,
+                         .FechaNac = item.FechaNac,
                          .Sexo = item.Sexo})
         Next
         Return infanteModelList
@@ -167,10 +167,25 @@ Public Class InfanteModel
                          .Nombre = item.Nombre,
                          .Apellido1 = item.Apellido1,
                          .Apellido2 = item.Apellido2,
-                         .FechaNacimiento = item.FechaNacimiento,
+                         .FechaNac = item.FechaNac,
                          .Sexo = item.Sexo})
         Next
         Return infanteModelList
     End Function
 
+    Public Function getAInfanteByValue2(value As String) As List(Of InfanteModel)
+        Dim result = infanteRepository.obtenerPorValorInt(value)
+        Dim infanteModelList As New List(Of InfanteModel)
+
+        For Each item As Infante In result
+            infanteModelList.Add(New InfanteModel With {
+                         .CedulaInfante = item.CedulaInfante,
+                         .Nombre = item.Nombre,
+                         .Apellido1 = item.Apellido1,
+                         .Apellido2 = item.Apellido2,
+                         .FechaNac = item.FechaNac,
+                         .Sexo = item.Sexo})
+        Next
+        Return infanteModelList
+    End Function
 End Class
