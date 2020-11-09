@@ -72,7 +72,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\ICrudEncargadoRetirar.vb" />
     <Compile Include="Abstracts\ICrudRepository.vb" />
+    <Compile Include="Abstracts\IEncargadoRetirarRepository.vb" />
     <Compile Include="Abstracts\IGenericRepository.vb" />
     <Compile Include="Abstracts\IInfanteRepository.vb" />
     <Compile Include="Abstracts\IUserRepository.vb" />
@@ -95,6 +97,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Repositories\EncargadoRetirarRepository.vb" />
     <Compile Include="Repositories\InfanteRepository.vb" />
     <Compile Include="Repositories\MasterRepository.vb" />
     <Compile Include="Repositories\Repository.vb" />

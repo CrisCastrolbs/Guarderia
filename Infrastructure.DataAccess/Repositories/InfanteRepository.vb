@@ -72,7 +72,7 @@ Public Class InfanteRepository
     Public Function obtenerPorValorInt(value As Integer) As IEnumerable(Of Infante) Implements ICrudRepository(Of Infante).obtenerPorValorInt
         Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@findValue", value))
-        Dim result = ExecuteReader("SP_selectInfanteCedula", parameters)
+        Dim result = ExecuteReader("SP_selectEncargadoRetirarInt", parameters)
         Dim listInfante = New List(Of Infante)
         For Each item As DataRow In result.Rows
             Dim infanteEntity = New Infante 'crear objeto ifante
@@ -86,7 +86,8 @@ Public Class InfanteRepository
         Next
         Return listInfante
     End Function
-    'Public Function eliminar(cedulaInfante As Integer) As Integer Implements ICrudRepository(Of Infante).eliminar
+    'Public Function eliminar(cedulaInfante As Integer)
+    'As Integer Implements ICrudRepository(Of Infante).eliminar
     '    Dim parameters As New List(Of SqlParameter)
     '    parameters.Add(New SqlParameter("@cedulaInfante", cedulaInfante))
     '    Return ExecuteNonQuery("EliminarInfante", parameters)
