@@ -72,12 +72,15 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\ICrudPlatoRepository.vb" />
     <Compile Include="Abstracts\ICrudRepository.vb" />
     <Compile Include="Abstracts\IGenericRepository.vb" />
     <Compile Include="Abstracts\IInfanteRepository.vb" />
+    <Compile Include="Abstracts\IPlatoRepository.vb" />
     <Compile Include="Abstracts\IUserRepository.vb" />
     <Compile Include="Entities\EncargadoRetirar.vb" />
     <Compile Include="Entities\Infante.vb" />
+    <Compile Include="Entities\Plato.vb" />
     <Compile Include="Entities\User.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -96,6 +99,7 @@
     </Compile>
     <Compile Include="Repositories\InfanteRepository.vb" />
     <Compile Include="Repositories\MasterRepository.vb" />
+    <Compile Include="Repositories\PlatoRepository.vb" />
     <Compile Include="Repositories\Repository.vb" />
     <Compile Include="Repositories\UserRepository.vb" />
   </ItemGroup>
