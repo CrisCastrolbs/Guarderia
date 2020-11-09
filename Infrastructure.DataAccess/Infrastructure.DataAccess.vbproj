@@ -73,11 +73,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstracts\ICrudEncargadoRetirar.vb" />
+    <Compile Include="Abstracts\ICrudPlatoRepository.vb" />
     <Compile Include="Abstracts\ICrudRepository.vb" />
+    <Compile Include="Abstracts\ICrudRepositoryString.vb" />
+    <Compile Include="Abstracts\ICrudTipoAlergiaRepository.vb" />
+    <Compile Include="Abstracts\IEncargadoRetirarRepository.vb" />
     <Compile Include="Abstracts\IGenericRepository.vb" />
     <Compile Include="Abstracts\IInfanteRepository.vb" />
     <Compile Include="Abstracts\IIngredienteRepository.vb" />
     <Compile Include="Abstracts\IMenuRepository.vb" />
+    <Compile Include="Abstracts\IPlatoRepository.vb" />
     <Compile Include="Abstracts\IResponsablePagoRepository.vb" />
     <Compile Include="Abstracts\ITipoAlergiaRepository.vb" />
     <Compile Include="Abstracts\IUserRepository.vb" />
@@ -85,6 +90,7 @@
     <Compile Include="Entities\Infante.vb" />
     <Compile Include="Entities\Ingrediente.vb" />
     <Compile Include="Entities\Menu.vb" />
+    <Compile Include="Entities\Plato.vb" />
     <Compile Include="Entities\ResponsablePago.vb" />
     <Compile Include="Entities\TipoAlergia.vb" />
     <Compile Include="Entities\User.vb" />
@@ -108,6 +114,7 @@
     <Compile Include="Repositories\IngredienteRepository.vb" />
     <Compile Include="Repositories\MasterRepository.vb" />
     <Compile Include="Repositories\MenuRepository.vb" />
+    <Compile Include="Repositories\PlatoRepository.vb" />
     <Compile Include="Repositories\Repository.vb" />
     <Compile Include="Repositories\ResponsablePagoRepository.vb" />
     <Compile Include="Repositories\TipoAlergiaRepository.vb" />
