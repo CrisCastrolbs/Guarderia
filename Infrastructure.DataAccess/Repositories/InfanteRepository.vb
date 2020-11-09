@@ -14,7 +14,7 @@ Public Class InfanteRepository
         parameters.Add(New SqlParameter("@Nombre", entity.Nombre))
         parameters.Add(New SqlParameter("@Apellido1", entity.Apellido1))
         parameters.Add(New SqlParameter("@Apellido2", entity.Apellido2))
-        parameters.Add(New SqlParameter("@FechaNacimiento", entity.FechaNacimiento))
+        parameters.Add(New SqlParameter("@FechaNac", entity.FechaNac))
         parameters.Add(New SqlParameter("@Sexo", entity.Sexo))
 
         Return ExecuteNonQuery("SP_InsertarInfante", parameters)
@@ -24,11 +24,13 @@ Public Class InfanteRepository
     'editar usuario
     Public Function editar(entity As Infante) As Integer Implements ICrudRepository(Of Infante).editar
         Dim parameters As New List(Of SqlParameter)
+        parameters.Add(New SqlParameter("@CedulaInfante", entity.CedulaInfante))
         parameters.Add(New SqlParameter("@Nombre", entity.Nombre))
         parameters.Add(New SqlParameter("@Apellido1", entity.Apellido1))
         parameters.Add(New SqlParameter("@Apellido2", entity.Apellido2))
-        parameters.Add(New SqlParameter("@FechaNacimiento", entity.FechaNacimiento))
-        parameters.Add(New SqlParameter("@CedulaInfante", entity.CedulaInfante))
+        parameters.Add(New SqlParameter("@FechaNac", entity.FechaNac))
+        parameters.Add(New SqlParameter("@Sexo", entity.Sexo))
+
         Return ExecuteNonQuery("SP_ActualizarInfante", parameters)
     End Function
 
@@ -39,10 +41,11 @@ Public Class InfanteRepository
         For Each item As DataRow In result.Rows
             Dim infanteEntity = New Infante 'crear objeto usuario
             infanteEntity.CedulaInfante = Convert.ToInt32(item(0))
-            infanteEntity.Apellido1 = item(1).ToString
-            infanteEntity.Apellido2 = item(2).ToString
-            infanteEntity.FechaNacimiento = Convert.ToDateTime(item(3))
-            infanteEntity.Sexo = item(4).ToString
+            infanteEntity.Nombre = item(1).ToString
+            infanteEntity.Apellido1 = item(2).ToString
+            infanteEntity.Apellido2 = item(3).ToString
+            infanteEntity.FechaNac = CDate(item(4).Date.ToString)
+            infanteEntity.Sexo = item(5).ToString
             'agregar entidad infante a la lista
             listInfante.Add(infanteEntity)
         Next
@@ -60,7 +63,7 @@ Public Class InfanteRepository
             infanteEntity.CedulaInfante = Convert.ToInt32(item(0))
             infanteEntity.Apellido1 = item(1).ToString
             infanteEntity.Apellido2 = item(2).ToString
-            infanteEntity.FechaNacimiento = Convert.ToDateTime(item(3))
+            infanteEntity.FechaNac = CDate(item(4).Date.ToString)
             infanteEntity.Sexo = item(4).ToString
             'agregar entidad infante a la lista
             listInfante.Add(infanteEntity)
@@ -72,21 +75,22 @@ Public Class InfanteRepository
     Public Function obtenerPorValorInt(value As Integer) As IEnumerable(Of Infante) Implements ICrudRepository(Of Infante).obtenerPorValorInt
         Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@findValue", value))
-        Dim result = ExecuteReader("SP_selectInfanteCedula", parameters)
+        Dim result = ExecuteReader("SP_selectEncargadoRetirarInt", parameters)
         Dim listInfante = New List(Of Infante)
         For Each item As DataRow In result.Rows
             Dim infanteEntity = New Infante 'crear objeto ifante
             infanteEntity.CedulaInfante = Convert.ToInt32(item(0))
             infanteEntity.Apellido1 = item(1).ToString
             infanteEntity.Apellido2 = item(2).ToString
-            infanteEntity.FechaNacimiento = Convert.ToDateTime(item(3))
+            infanteEntity.FechaNac = CDate(item(4).Date.ToString)
             infanteEntity.Sexo = item(4).ToString
             'agregar entidad infante a la lista
             listInfante.Add(infanteEntity)
         Next
         Return listInfante
     End Function
-    'Public Function eliminar(cedulaInfante As Integer) As Integer Implements ICrudRepository(Of Infante).eliminar
+    'Public Function eliminar(cedulaInfante As Integer)
+    'As Integer Implements ICrudRepository(Of Infante).eliminar
     '    Dim parameters As New List(Of SqlParameter)
     '    parameters.Add(New SqlParameter("@cedulaInfante", cedulaInfante))
     '    Return ExecuteNonQuery("EliminarInfante", parameters)

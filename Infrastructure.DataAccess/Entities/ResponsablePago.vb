@@ -1,4 +1,4 @@
-﻿Public Class ResposablePago
+﻿Public Class ResponsablePago
     Public Property CedulaRespPago As Integer
     Public Property Nombre As String
     Public Property Apellido1 As String
@@ -9,6 +9,6 @@
     Public Property Provincia As String
     Public Property Telefono As Integer
     Public Property NumCuenta As String
-    Public Property AutorizadoRetirar As Char
+    Public Property AutorizadoRetirar As Boolean
 
 End Class

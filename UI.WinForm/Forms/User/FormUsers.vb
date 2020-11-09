@@ -13,6 +13,7 @@ Public Class FormUsers
         DataGridView1.DataSource = userModel.getAllUsers()
         DataGridView1.RowTemplate.Height = 100 'establecer una altura considerable para visualizar las fotos de perfil del usuario.
     End Sub
+
     Private Sub btnCancel_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub

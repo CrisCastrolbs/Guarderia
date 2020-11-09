@@ -265,7 +265,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain.Models\Domain.Models.vbproj">
-      <Project>{ab5e827e-0088-4d2c-96e4-b24267807b5d}</Project>
+      <Project>{AB5E827E-0088-4D2C-96E4-B24267807B5D}</Project>
       <Name>Domain.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain.ValueObjects\Domain.ValueObjects.vbproj">

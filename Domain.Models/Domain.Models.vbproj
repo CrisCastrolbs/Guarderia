@@ -72,8 +72,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EncargadoRetirarModel.vb" />
     <Compile Include="InfanteModel.vb" />
+    <Compile Include="IngredienteModel.vb" />
     <Compile Include="MenuModel.vb" />
+    <Compile Include="PlatoModel.vb" />
+    <Compile Include="ResponsablePagoModel.vb" />
+    <Compile Include="TipoAlergiaModel.vb" />
     <Compile Include="UserModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

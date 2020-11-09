@@ -42,7 +42,7 @@ Partial Class FormPrincipal
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btnMenu = New System.Windows.Forms.Button()
         Me.btnMatricula = New System.Windows.Forms.Button()
-        Me.btnPacient = New System.Windows.Forms.Button()
+        Me.btnInfante = New System.Windows.Forms.Button()
         Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -126,7 +126,7 @@ Partial Class FormPrincipal
         Me.PanelMenu.Controls.Add(Me.Panel1)
         Me.PanelMenu.Controls.Add(Me.btnMenu)
         Me.PanelMenu.Controls.Add(Me.btnMatricula)
-        Me.PanelMenu.Controls.Add(Me.btnPacient)
+        Me.PanelMenu.Controls.Add(Me.btnInfante)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 39)
         Me.PanelMenu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -325,23 +325,23 @@ Partial Class FormPrincipal
         Me.btnMatricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnMatricula.UseVisualStyleBackColor = True
         '
-        'btnPacient
+        'btnInfante
         '
-        Me.btnPacient.FlatAppearance.BorderSize = 0
-        Me.btnPacient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.btnPacient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPacient.Font = New System.Drawing.Font("Ebrima", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPacient.ForeColor = System.Drawing.Color.Gainsboro
-        Me.btnPacient.Image = CType(resources.GetObject("btnPacient.Image"), System.Drawing.Image)
-        Me.btnPacient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPacient.Location = New System.Drawing.Point(0, 195)
-        Me.btnPacient.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnPacient.Name = "btnPacient"
-        Me.btnPacient.Size = New System.Drawing.Size(250, 40)
-        Me.btnPacient.TabIndex = 0
-        Me.btnPacient.Text = "Niños"
-        Me.btnPacient.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnPacient.UseVisualStyleBackColor = True
+        Me.btnInfante.FlatAppearance.BorderSize = 0
+        Me.btnInfante.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.btnInfante.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInfante.Font = New System.Drawing.Font("Ebrima", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInfante.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnInfante.Image = CType(resources.GetObject("btnInfante.Image"), System.Drawing.Image)
+        Me.btnInfante.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnInfante.Location = New System.Drawing.Point(0, 195)
+        Me.btnInfante.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnInfante.Name = "btnInfante"
+        Me.btnInfante.Size = New System.Drawing.Size(250, 40)
+        Me.btnInfante.TabIndex = 0
+        Me.btnInfante.Text = "Niños"
+        Me.btnInfante.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnInfante.UseVisualStyleBackColor = True
         '
         'PanelBarraTitulo
         '
@@ -479,7 +479,7 @@ Partial Class FormPrincipal
     Friend WithEvents btnCerrar As PictureBox
     Friend WithEvents btnMenu As Button
     Friend WithEvents btnMatricula As Button
-    Friend WithEvents btnPacient As Button
+    Friend WithEvents btnInfante As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents LOGO As PictureBox
     Friend WithEvents Panel1 As Panel

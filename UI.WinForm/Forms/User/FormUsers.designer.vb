@@ -63,7 +63,7 @@ Partial Class FormUsers
         Me.Label6.Location = New System.Drawing.Point(36, 224)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(57, 20)
+        Me.Label6.Size = New System.Drawing.Size(48, 17)
         Me.Label6.TabIndex = 43
         Me.Label6.Text = "Roles:"
         '
@@ -77,7 +77,7 @@ Partial Class FormUsers
         Me.cmbPosition.Location = New System.Drawing.Point(40, 248)
         Me.cmbPosition.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbPosition.Name = "cmbPosition"
-        Me.cmbPosition.Size = New System.Drawing.Size(269, 28)
+        Me.cmbPosition.Size = New System.Drawing.Size(269, 24)
         Me.cmbPosition.TabIndex = 44
         '
         'Panel1
@@ -114,7 +114,7 @@ Partial Class FormUsers
         Me.label8.Location = New System.Drawing.Point(178, 156)
         Me.label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.label8.Name = "label8"
-        Me.label8.Size = New System.Drawing.Size(157, 40)
+        Me.label8.Size = New System.Drawing.Size(132, 34)
         Me.label8.TabIndex = 66
         Me.label8.Text = "Recommended size" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "90 x100 pixels"
         Me.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -128,7 +128,7 @@ Partial Class FormUsers
         Me.linkChangePictureProfile.Location = New System.Drawing.Point(281, 92)
         Me.linkChangePictureProfile.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.linkChangePictureProfile.Name = "linkChangePictureProfile"
-        Me.linkChangePictureProfile.Size = New System.Drawing.Size(72, 20)
+        Me.linkChangePictureProfile.Size = New System.Drawing.Size(60, 17)
         Me.linkChangePictureProfile.TabIndex = 67
         Me.linkChangePictureProfile.TabStop = True
         Me.linkChangePictureProfile.Text = "Cambiar"
@@ -177,7 +177,7 @@ Partial Class FormUsers
         Me.Label11.ForeColor = System.Drawing.Color.White
         Me.Label11.Location = New System.Drawing.Point(33, 22)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(240, 39)
+        Me.Label11.Size = New System.Drawing.Size(191, 31)
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "Mantenimiento"
         '
@@ -188,7 +188,7 @@ Partial Class FormUsers
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(36, 276)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 20)
+        Me.Label1.Size = New System.Drawing.Size(62, 17)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre:"
         '
@@ -196,14 +196,14 @@ Partial Class FormUsers
         '
         Me.txtUsername.Location = New System.Drawing.Point(39, 296)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(270, 26)
+        Me.txtUsername.Size = New System.Drawing.Size(270, 23)
         Me.txtUsername.TabIndex = 0
         '
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(39, 342)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(270, 26)
+        Me.txtPassword.Size = New System.Drawing.Size(270, 23)
         Me.txtPassword.TabIndex = 2
         '
         'lbl2
@@ -213,7 +213,7 @@ Partial Class FormUsers
         Me.lbl2.ForeColor = System.Drawing.Color.White
         Me.lbl2.Location = New System.Drawing.Point(36, 178)
         Me.lbl2.Name = "lbl2"
-        Me.lbl2.Size = New System.Drawing.Size(56, 20)
+        Me.lbl2.Size = New System.Drawing.Size(46, 17)
         Me.lbl2.TabIndex = 11
         Me.lbl2.Text = "Email:"
         '
@@ -224,7 +224,7 @@ Partial Class FormUsers
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(36, 322)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 20)
+        Me.Label2.Size = New System.Drawing.Size(85, 17)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Contraseña:"
         '
@@ -232,7 +232,7 @@ Partial Class FormUsers
         '
         Me.txtEmail.Location = New System.Drawing.Point(39, 198)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(270, 26)
+        Me.txtEmail.Size = New System.Drawing.Size(270, 23)
         Me.txtEmail.TabIndex = 10
         '
         'Label5
@@ -242,7 +242,7 @@ Partial Class FormUsers
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(36, 132)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(73, 20)
+        Me.Label5.Size = New System.Drawing.Size(62, 17)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Apellido:"
         '
@@ -250,14 +250,14 @@ Partial Class FormUsers
         '
         Me.txtLastName.Location = New System.Drawing.Point(39, 152)
         Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(130, 26)
+        Me.txtLastName.Size = New System.Drawing.Size(130, 23)
         Me.txtLastName.TabIndex = 8
         '
         'txtFirstName
         '
         Me.txtFirstName.Location = New System.Drawing.Point(39, 106)
         Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(130, 26)
+        Me.txtFirstName.Size = New System.Drawing.Size(130, 23)
         Me.txtFirstName.TabIndex = 6
         '
         'Label4
@@ -267,7 +267,7 @@ Partial Class FormUsers
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(36, 86)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 20)
+        Me.Label4.Size = New System.Drawing.Size(62, 17)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Nombre:"
         '
@@ -293,7 +293,7 @@ Partial Class FormUsers
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(41, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(152, 39)
+        Me.Label3.Size = New System.Drawing.Size(122, 31)
         Me.Label3.TabIndex = 47
         Me.Label3.Text = "Usuarios"
         '
@@ -303,7 +303,7 @@ Partial Class FormUsers
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSearch.Location = New System.Drawing.Point(33, 63)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(649, 26)
+        Me.txtSearch.Size = New System.Drawing.Size(649, 23)
         Me.txtSearch.TabIndex = 48
         '
         'Label7
@@ -313,7 +313,7 @@ Partial Class FormUsers
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(30, 43)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(218, 20)
+        Me.Label7.Size = New System.Drawing.Size(186, 17)
         Me.Label7.TabIndex = 49
         Me.Label7.Text = "Búsqueda:  (presione enter)"
         '
@@ -379,7 +379,7 @@ Partial Class FormUsers
         '
         'FormUsers
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1050, 551)
