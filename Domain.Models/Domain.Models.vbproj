@@ -124,10 +124,6 @@
       <Project>{6023ccb2-2970-403a-811a-ca6501469a71}</Project>
       <Name>Infrastructure.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.DataAccess\Infrastructure.DataAccess.vbproj">
-      <Project>{47bcffa9-5260-4094-a3fa-883f08043884}</Project>
-      <Name>Infrastructure.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Infrastructure.MailServices\Infrastructure.MailServices.vbproj">
       <Project>{86e8fe75-44b3-4c22-a703-2166018074af}</Project>
       <Name>Infrastructure.MailServices</Name>
