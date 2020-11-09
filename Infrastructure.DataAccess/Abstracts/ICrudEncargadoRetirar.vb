@@ -1,4 +1,4 @@
-﻿Public Interface ICrudRepository(Of Entity As Class)
+﻿Public Interface ICrudEncargadoRetirar(Of Entity As Class)
     Function obtenerTodo() As IEnumerable(Of Entity)
     Function obtenerPorValor(value As String) As IEnumerable(Of Entity)
     Function obtenerPorValorInt(value As Integer) As IEnumerable(Of Entity)
