@@ -76,9 +76,13 @@
     <Compile Include="Abstracts\ICrudTipoAlergiaRepository.vb" />
     <Compile Include="Abstracts\IGenericRepository.vb" />
     <Compile Include="Abstracts\IInfanteRepository.vb" />
+    <Compile Include="Abstracts\IMenuRepository.vb" />
+    <Compile Include="Abstracts\ITipoAlergiaRepository.vb" />
     <Compile Include="Abstracts\IUserRepository.vb" />
     <Compile Include="Entities\EncargadoRetirar.vb" />
     <Compile Include="Entities\Infante.vb" />
+    <Compile Include="Entities\Menu.vb" />
+    <Compile Include="Entities\TipoAlergia.vb" />
     <Compile Include="Entities\User.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
