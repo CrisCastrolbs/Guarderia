@@ -78,6 +78,7 @@
     <Compile Include="Abstracts\IUserRepository.vb" />
     <Compile Include="Entities\EncargadoRetirar.vb" />
     <Compile Include="Entities\Infante.vb" />
+    <Compile Include="Entities\ResposablePago.vb" />
     <Compile Include="Entities\User.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
