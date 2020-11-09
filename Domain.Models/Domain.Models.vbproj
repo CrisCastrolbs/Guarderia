@@ -73,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InfanteModel.vb" />
-    <Compile Include="TipoAlergiaModel.vb" />
     <Compile Include="UserModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

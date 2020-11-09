@@ -193,4 +193,5 @@ Partial Class FormWelcome
     Private WithEvents timer1 As Timer
     Private WithEvents timer2 As Timer
     Friend WithEvents CircularProgressBar1 As CircularProgressBar.CircularProgressBar
+    Public Property WinFormAnimation As Object
 End Class
