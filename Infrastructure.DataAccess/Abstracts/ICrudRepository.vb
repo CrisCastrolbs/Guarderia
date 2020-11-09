@@ -4,5 +4,5 @@
     Function obtenerPorValorInt(value As Integer) As IEnumerable(Of Entity)
     Function añadir(entity As Entity) As Integer
     Function editar(entity As Entity) As Integer
-    'Function Eliminar(CedulaInfante As Integer) As Integer
+
 End Interface
