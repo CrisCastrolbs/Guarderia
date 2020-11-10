@@ -76,6 +76,7 @@
     <Compile Include="InfanteModel.vb" />
     <Compile Include="IngredienteModel.vb" />
     <Compile Include="MenuModel.vb" />
+    <Compile Include="PagoMensualModel.vb" />
     <Compile Include="PlatoModel.vb" />
     <Compile Include="ResponsablePagoModel.vb" />
     <Compile Include="TipoAlergiaModel.vb" />
