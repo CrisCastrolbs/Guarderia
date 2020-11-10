@@ -80,8 +80,10 @@
     <Compile Include="Abstracts\IEncargadoRetirarRepository.vb" />
     <Compile Include="Abstracts\IGenericRepository.vb" />
     <Compile Include="Abstracts\IInfanteRepository.vb" />
+    <Compile Include="Abstracts\IIngredientePlatoRepository.vb" />
     <Compile Include="Abstracts\IIngredienteRepository.vb" />
     <Compile Include="Abstracts\IMenuRepository.vb" />
+    <Compile Include="Abstracts\IPlatoMenuRepository.vb" />
     <Compile Include="Abstracts\IPlatoRepository.vb" />
     <Compile Include="Abstracts\IResponsablePagoRepository.vb" />
     <Compile Include="Abstracts\ITipoAlergiaRepository.vb" />
@@ -89,8 +91,10 @@
     <Compile Include="Entities\EncargadoRetirar.vb" />
     <Compile Include="Entities\Infante.vb" />
     <Compile Include="Entities\Ingrediente.vb" />
+    <Compile Include="Entities\IngredientePlato.vb" />
     <Compile Include="Entities\Menu.vb" />
     <Compile Include="Entities\Plato.vb" />
+    <Compile Include="Entities\PlatoMenu.vb" />
     <Compile Include="Entities\ResponsablePago.vb" />
     <Compile Include="Entities\TipoAlergia.vb" />
     <Compile Include="Entities\User.vb" />
@@ -111,9 +115,11 @@
     </Compile>
     <Compile Include="Repositories\EncargadoRetirarRepository.vb" />
     <Compile Include="Repositories\InfanteRepository.vb" />
+    <Compile Include="Repositories\IngredientePlatoRepository.vb" />
     <Compile Include="Repositories\IngredienteRepository.vb" />
     <Compile Include="Repositories\MasterRepository.vb" />
     <Compile Include="Repositories\MenuRepository.vb" />
+    <Compile Include="Repositories\PlatoMenuRepository.vb" />
     <Compile Include="Repositories\PlatoRepository.vb" />
     <Compile Include="Repositories\Repository.vb" />
     <Compile Include="Repositories\ResponsablePagoRepository.vb" />
