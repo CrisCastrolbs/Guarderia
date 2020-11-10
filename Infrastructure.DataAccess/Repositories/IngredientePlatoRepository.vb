@@ -5,7 +5,7 @@ Public Class IngredientePlatoRepository
     Implements IIngredientePlatoRepository
 
     'agregar nuevo IngredientePlato
-    Public Function añadir(entity As IngredientePlato) As Integer Implements ICrudRepository(Of IngredientePlato).añadir
+    Public Function añadir(entity As IngredientePlato) As Integer Implements ICrudListar(Of IngredientePlato).añadir
         'Crear parametros y agregar valor
         Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@IdIngredientePlato", entity.IdIngredientePlato))
@@ -18,7 +18,7 @@ Public Class IngredientePlatoRepository
     End Function
 
     'editar IngredientePlato
-    Public Function editar(entity As IngredientePlato) As Integer Implements ICrudRepository(Of IngredientePlato).editar
+    Public Function editar(entity As IngredientePlato) As Integer Implements ICrudListar(Of IngredientePlato).editar
         Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@IdIngrediente", entity.IdIngrediente))
         parameters.Add(New SqlParameter("@IdPlato", entity.IdPlato))
@@ -27,7 +27,7 @@ Public Class IngredientePlatoRepository
     End Function
 
     '//obtener todos los datos de IngredientePlato
-    Public Function obtenerTodo() As IEnumerable(Of IngredientePlato) Implements ICrudRepository(Of IngredientePlato).obtenerTodo
+    Public Function obtenerTodo() As IEnumerable(Of IngredientePlato) Implements ICrudListar(Of IngredientePlato).obtenerTodo
         Dim result = ExecuteReader("SP_SelectAllIngredientePlato")
         Dim listIngredientePlato = New List(Of IngredientePlato)
         For Each item As DataRow In result.Rows
@@ -43,7 +43,7 @@ Public Class IngredientePlatoRepository
     End Function
 
     '//buscar por valor (buscar por nombre de IngredientePlato)
-    Public Function obtenerPorValor(value As String) As IEnumerable(Of IngredientePlato) Implements ICrudRepository(Of IngredientePlato).obtenerPorValor
+    Public Function obtenerPorValor(value As String) As IEnumerable(Of IngredientePlato) Implements ICrudListar(Of IngredientePlato).obtenerPorValor
         Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@findValue", value))
         Dim result = ExecuteReader("SP_selectIngredientePlato", parameters)
@@ -60,7 +60,7 @@ Public Class IngredientePlatoRepository
     End Function
 
     '//buscar por valor (buscar por Id)
-    Public Function obtenerPorValorInt(value As Integer) As IEnumerable(Of IngredientePlato) Implements ICrudRepository(Of IngredientePlato).obtenerPorValorInt
+    Public Function obtenerPorValorInt(value As Integer) As IEnumerable(Of IngredientePlato) Implements ICrudListar(Of IngredientePlato).obtenerPorValorInt
         Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@findValue", value))
         Dim result = ExecuteReader("SP_selectIngredientePlatoId", parameters)
@@ -75,9 +75,22 @@ Public Class IngredientePlatoRepository
         Next
         Return listIngredientePlato
     End Function
-    'Public Function eliminar(IdIngredientePlato As Integer) As Integer Implements ICrudRepository(Of IngredientePlato).eliminar
+    'Public Function eliminar(IdIngredientePlato As Integer) As Integer Implements ICrudListar(Of IngredientePlato).eliminar
     '    Dim parameters As New List(Of SqlParameter)
     '    parameters.Add(New SqlParameter("@idmenu", IdIngredientePlato))
     '    Return ExecuteNonQuery("EliminarIngredientePlato", parameters)
     'End Function
+
+    Public Function listarIngrediente(entity As IngredientePlato) As String Implements ICrudListar(Of IngredientePlato).listar1
+        Dim parameters As New List(Of SqlParameter)
+        parameters.Add(New SqlParameter("@NombreIngrediente", entity.IdIngrediente))
+        Return ExecuteNonQuery("SP_ListarIngrediente", parameters)
+    End Function
+
+    Public Function listarPlato(entity As IngredientePlato) As String Implements ICrudListar(Of IngredientePlato).listar2
+        Dim parameters As New List(Of SqlParameter)
+        parameters.Add(New SqlParameter("@NombrePlato", entity.IdPlato))
+        Return ExecuteNonQuery("SP_ListarPlato", parameters)
+    End Function
+
 End Class

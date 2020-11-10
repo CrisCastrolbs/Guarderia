@@ -65,32 +65,7 @@ Public Class IngredientePlatoModel
     End Sub
 
     'Metodos , comportamientos
-    Public Function saveChanges() As String 'insertar, editar o eliminar
-        Dim result As String = Nothing
-        Try
-            Select Case State
-                Case EntityState.Added
-                    IngredientePlatoRepository.añadir(ingredienteplatoEntity())
-                    result = "Grabado con éxito"
-                Case EntityState.Edited
-                    IngredientePlatoRepository.editar(ingredienteplatoEntity())
-                    result = "Editado con éxito"
-                    'Case EntityState.Removed
-                    '    menuRepository.eliminar(IdMenu)
-                    '    result = "Eliminado con éxito"
-            End Select
 
-        Catch ex As Exception
-            Dim sqlEx As System.Data.SqlClient.SqlException = ex
-            If sqlEx IsNot Nothing AndAlso sqlEx.Number = 2627 Then
-                result = "[ : ( ] UPS¡ Registro duplicado" &
-                    vbNewLine & "El Ingrediente del plato ya está registrado, pruebe con otro, ¡por favor!"
-            Else
-                result = ex.ToString()
-            End If
-        End Try
-        Return result
-    End Function
 
     Private Function ingredienteplatoEntity() As IngredientePlato 'crear objeto ->entidad usuario
         Dim ingredienteplatoObject = New IngredientePlato
@@ -125,5 +100,31 @@ Public Class IngredientePlatoModel
         Next
         Return IngredientePlatoModelList
     End Function
+
+    Public Function saveChanges() As String 'insertar, editar o eliminar
+        Dim result As String = Nothing
+        Try
+            Select Case State
+                Case EntityState.
+                    IngredientePlatoRepository.añadir(ingredienteplatoEntity())
+                    result = "Grabado con éxito"
+                Case EntityState.Edited
+                    IngredientePlatoRepository.editar(ingredienteplatoEntity())
+                    result = "Editado con éxito"
+                    'Case EntityState.Removed
+                    '    menuRepository.eliminar(IdMenu)
+                    '    result = "Eliminado con éxito"
+            End Select
+
+        Catch ex As Exception
+            Dim sqlEx As System.Data.SqlClient.SqlException = ex
+            If sqlEx IsNot Nothing AndAlso sqlEx.Number = 2627 Then
+                result = "[ : ( ] UPS¡ Registro duplicado" &
+                    vbNewLine & "El Ingrediente del plato ya está registrado, pruebe con otro, ¡por favor!"
+            Else
+                result = ex.ToString()
+            End If
+        End Try
+        Return result
 
 End Class

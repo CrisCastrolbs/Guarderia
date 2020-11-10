@@ -1,3 +1,3 @@
 ﻿Public Interface IIngredientePlatoRepository
-    Inherits ICrudRepository(Of IngredientePlato)
+    Inherits ICrudListar(Of IngredientePlato)
 End Interface

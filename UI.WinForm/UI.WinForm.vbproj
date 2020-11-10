@@ -291,6 +291,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Domain.Models\Domain.Models.vbproj">
+      <Project>{AB5E827E-0088-4D2C-96E4-B24267807B5D}</Project>
+      <Name>Domain.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain.ValueObjects\Domain.ValueObjects.vbproj">
       <Project>{1734ab41-dc2e-428a-baee-59b12becf63a}</Project>
       <Name>Domain.ValueObjects</Name>
@@ -298,6 +302,10 @@
     <ProjectReference Include="..\Infrastructure.Common\Infrastructure.Common.vbproj">
       <Project>{6023ccb2-2970-403a-811a-ca6501469a71}</Project>
       <Name>Infrastructure.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.DataAccess\Infrastructure.DataAccess.vbproj">
+      <Project>{47BCFFA9-5260-4094-A3FA-883F08043884}</Project>
+      <Name>Infrastructure.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
