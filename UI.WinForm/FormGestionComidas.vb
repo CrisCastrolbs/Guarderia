@@ -153,9 +153,9 @@ Public Class FormGestionComidas
     End Sub
 #End Region
 
-    Private Sub FormGestionAsistencia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FormGestionComidas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         loadUser()
-        managePermissions()
+
     End Sub
 
     Private Sub loadUser()
@@ -209,6 +209,11 @@ Public Class FormGestionComidas
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
         openFormOnPanel(Of FormUsers)()
         activatedButton(btnMenu)
+    End Sub
+
+    Private Sub btnIngredientePlato_Click(sender As Object, e As EventArgs) Handles btnIngredientePlato.Click
+        openFormOnPanel(Of FormIngredientePlato)()
+        activatedButton(btnIngredientePlato)
     End Sub
 
     Private Sub btnMyProfile_Click(sender As Object, e As EventArgs) Handles pictureProfile.Click 'USER IMAGE 

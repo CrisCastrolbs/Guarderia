@@ -110,4 +110,5 @@ Public Class FormUsers
             editedPictureBoxProfile.Image = New Bitmap(openFile.FileName)
         End If
     End Sub
+
 End Class
