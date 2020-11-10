@@ -79,6 +79,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormGestionEconomica.designer.vb">
+      <DependentUpon>FormGestionEconomica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionEconomica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionComidas.designer.vb">
+      <DependentUpon>FormGestionComidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionComidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionAsistencia.designer.vb">
+      <DependentUpon>FormGestionAsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionAsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\TestForms\FormAlergiaInfante.Designer.vb">
       <DependentUpon>FormAlergiaInfante.vb</DependentUpon>
     </Compile>
@@ -113,6 +131,12 @@
       <DependentUpon>FormRespPago.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\TestForms\FormRespPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\FormWelcome.designer.vb">
+      <DependentUpon>FormWelcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\FormWelcome.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Helpers\ConvertItem.vb" />
@@ -170,12 +194,6 @@
     <Compile Include="Forms\User\FormRecoverPassword.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\User\FormWelcome.designer.vb">
-      <DependentUpon>FormWelcome.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\User\FormWelcome.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -194,6 +212,15 @@
     <Compile Include="Helpers\DataValidation.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormGestionEconomica.resx">
+      <DependentUpon>FormGestionEconomica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionComidas.resx">
+      <DependentUpon>FormGestionComidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionAsistencia.resx">
+      <DependentUpon>FormGestionAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TestForms\FormAlergiaInfante.resx">
       <DependentUpon>FormAlergiaInfante.vb</DependentUpon>
     </EmbeddedResource>

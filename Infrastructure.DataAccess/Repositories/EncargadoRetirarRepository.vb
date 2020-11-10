@@ -91,18 +91,22 @@ Public Class EncargadoRetirarRepository
         Dim parameters As New List(Of SqlParameter)
         parameters.Add(New SqlParameter("@findValue", value))
         Dim result = ExecuteReader("SP_selectEncargadoRetirarInt", parameters)
-        Dim listInfante = New List(Of Infante)
+        Dim listEncargadoRetirar = New List(Of EncargadoRetirar)
         For Each item As DataRow In result.Rows
-            Dim infanteEntity = New Infante 'crear objeto ifante
-            infanteEntity.CedulaInfante = Convert.ToInt32(item(0))
-            infanteEntity.Apellido1 = item(1).ToString
-            infanteEntity.Apellido2 = item(2).ToString
-            infanteEntity.FechaNacimiento = Convert.ToDateTime(item(3))
-            infanteEntity.Sexo = item(4).ToString
+            Dim encargadoRetirarEntity = New EncargadoRetirar 'crear objeto ifante
+            encargadoRetirarEntity.CedulaEncargado = Convert.ToInt32(item(0))
+            encargadoRetirarEntity.Apellido1 = item(1).ToString
+            encargadoRetirarEntity.Apellido2 = item(2).ToString
+            encargadoRetirarEntity.Direccion = item(3).ToString
+            encargadoRetirarEntity.Distrito = item(4).ToString
+            encargadoRetirarEntity.Canton = item(5).ToString
+            encargadoRetirarEntity.Provincia = item(6).ToString
+            encargadoRetirarEntity.NumTelefono1 = item(7).ToString
+            encargadoRetirarEntity.NumTelefono2 = item(8).ToString
             'agregar entidad infante a la lista
-            listInfante.Add(infanteEntity)
+            listEncargadoRetirar.Add(encargadoRetirarEntity)
         Next
-        Return listInfante
+        Return listEncargadoRetirar
     End Function
 
 

@@ -3,7 +3,7 @@ Imports Infrastructure.Common
 Imports Domain.Models
 
 
-Public Class FormPrincipal
+Public Class FormGestionEconomica
 #Region "FUNCIONALIDADES DEL FORMULARIO// FUNCTIONALITIES OF THE FORM"
     'RESIZE DEL FORMULARIO- CAMBIAR TAMAÑO//RESIZE OF THE FORM- CHANGE SIZE
     Dim cGrip As Integer = 10
@@ -153,7 +153,7 @@ Public Class FormPrincipal
     End Sub
 #End Region
 
-    Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FormGestionEconomica_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         loadUser()
         managePermissions()
     End Sub
@@ -168,16 +168,16 @@ Public Class FormPrincipal
     End Sub
     'MANEJAR ROLES
     Private Sub managePermissions()
-        If ActiveUser.c_position = Positions.recepcionista Then
-            btnEstadistica.Enabled = False
-            btnUsuarios.Enabled = False
-            btnComidas.Enabled = False
-        End If
+        'If ActiveUser.c_position = Positions.recepcionista Then
+        '    btnChart.Enabled = False
+        '    btnUsuarios.Enabled = False
+        '    btnUsers.Enabled = False
+        'End If
         If ActiveUser.c_position = Positions.cocinera Then
-            btnAsistencia.Enabled = False
-            btnEconomica.Enabled = False
-            btnMatricula.Enabled = True
-            btnComidas.Enabled = False
+            btnInfante.Enabled = False
+            btnMatricula.Enabled = False
+            btnMenu.Enabled = True
+            btnUsers.Enabled = False
         End If
         If ActiveUser.c_position = Positions.administrador Then
             '
@@ -191,38 +191,24 @@ Public Class FormPrincipal
     End Sub
 
     'BUTTONS TO OPEN FORMS "
-
-
-    Private Sub btnUsuarios_Click(sender As Object, e As EventArgs) Handles btnUsuarios.Click
-        openFormOnPanel(Of FormUsers)()
-        activatedButton(btnComidas)
+    Private Sub btnInfante_Click(sender As Object, e As EventArgs) Handles btnInfante.Click
+        openFormOnPanel(Of FormNinyo)()
+        activatedButton(btnInfante)
     End Sub
 
-    Private Sub btnComidas_Click(sender As Object, e As EventArgs) Handles btnComidas.Click
-        Me.Hide()
-        Dim frm As New FormGestionComidas()
-        frm.Show()
-        AddHandler frm.FormClosed, AddressOf Me.FormPrincipal_Load
-
-    End Sub
-
-    Private Sub btnAsistencia_Click(sender As Object, e As EventArgs) Handles btnAsistencia.Click
-        Me.Hide()
-        Dim frm As New FormGestionAsistencia()
-        frm.Show()
-        AddHandler frm.FormClosed, AddressOf Me.FormPrincipal_Load
-    End Sub
-
-    Private Sub btnEconomica_Click(sender As Object, e As EventArgs) Handles btnEconomica.Click
-        Me.Hide()
-        Dim frm As New FormGestionEconomica()
-        frm.Show()
-        AddHandler frm.FormClosed, AddressOf Me.FormPrincipal_Load
-    End Sub
-
-    Private Sub btnMatricula_Click(sender As Object, e As EventArgs) Handles btnMatricula.Click
+    Private Sub btnClinicalHistory_Click(sender As Object, e As EventArgs) Handles btnMatricula.Click
         openFormOnPanel(Of FormMatricula)()
         activatedButton(btnMatricula)
+    End Sub
+
+    Private Sub btnCalendar_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
+        openFormOnPanel(Of FormEncargado)()
+        activatedButton(btnMenu)
+    End Sub
+
+    Private Sub btnUsers_Click(sender As Object, e As EventArgs) Handles btnUsers.Click
+        openFormOnPanel(Of FormUsers)()
+        activatedButton(btnUsers)
     End Sub
 
     Private Sub btnMyProfile_Click(sender As Object, e As EventArgs) Handles pictureProfile.Click 'USER IMAGE 
