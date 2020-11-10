@@ -52,15 +52,16 @@ Partial Class FormIngredientePlato
         Me.PanelIngredienteMenu.Controls.Add(Me.Label11)
         Me.PanelIngredienteMenu.Controls.Add(Me.Label10)
         Me.PanelIngredienteMenu.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelIngredienteMenu.Location = New System.Drawing.Point(910, 0)
+        Me.PanelIngredienteMenu.Location = New System.Drawing.Point(702, 0)
         Me.PanelIngredienteMenu.Name = "PanelIngredienteMenu"
-        Me.PanelIngredienteMenu.Size = New System.Drawing.Size(335, 642)
-        Me.PanelIngredienteMenu.TabIndex = 77
+        Me.PanelIngredienteMenu.Size = New System.Drawing.Size(348, 551)
+        Me.PanelIngredienteMenu.TabIndex = 45
         '
         'cmbNombrePlato
         '
         Me.cmbNombrePlato.FormattingEnabled = True
-        Me.cmbNombrePlato.Location = New System.Drawing.Point(26, 219)
+        Me.cmbNombrePlato.Location = New System.Drawing.Point(27, 219)
+        Me.cmbNombrePlato.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbNombrePlato.Name = "cmbNombrePlato"
         Me.cmbNombrePlato.Size = New System.Drawing.Size(269, 24)
         Me.cmbNombrePlato.TabIndex = 45
@@ -68,9 +69,10 @@ Partial Class FormIngredientePlato
         'cmbNombreIngrediente
         '
         Me.cmbNombreIngrediente.FormattingEnabled = True
-        Me.cmbNombreIngrediente.Location = New System.Drawing.Point(26, 309)
+        Me.cmbNombreIngrediente.Location = New System.Drawing.Point(27, 309)
+        Me.cmbNombreIngrediente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmbNombreIngrediente.Name = "cmbNombreIngrediente"
-        Me.cmbNombreIngrediente.Size = New System.Drawing.Size(270, 24)
+        Me.cmbNombreIngrediente.Size = New System.Drawing.Size(271, 24)
         Me.cmbNombreIngrediente.TabIndex = 44
         '
         'btnCancel
@@ -79,9 +81,10 @@ Partial Class FormIngredientePlato
         Me.btnCancel.FlatAppearance.BorderSize = 0
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.ForeColor = System.Drawing.Color.White
-        Me.btnCancel.Location = New System.Drawing.Point(28, 435)
+        Me.btnCancel.Location = New System.Drawing.Point(39, 415)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(130, 49)
+        Me.btnCancel.Size = New System.Drawing.Size(131, 49)
         Me.btnCancel.TabIndex = 24
         Me.btnCancel.Text = "Cancelar"
         Me.btnCancel.UseVisualStyleBackColor = False
@@ -92,9 +95,10 @@ Partial Class FormIngredientePlato
         Me.btnSave.FlatAppearance.BorderSize = 0
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Location = New System.Drawing.Point(175, 435)
+        Me.btnSave.Location = New System.Drawing.Point(176, 415)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(130, 49)
+        Me.btnSave.Size = New System.Drawing.Size(131, 49)
         Me.btnSave.TabIndex = 23
         Me.btnSave.Text = "Guardar"
         Me.btnSave.UseVisualStyleBackColor = False
@@ -108,7 +112,7 @@ Partial Class FormIngredientePlato
         Me.Label9.Location = New System.Drawing.Point(23, 272)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(137, 17)
+        Me.Label9.Size = New System.Drawing.Size(103, 13)
         Me.Label9.TabIndex = 43
         Me.Label9.Text = "Nombre Ingrediente:"
         '
@@ -119,7 +123,7 @@ Partial Class FormIngredientePlato
         Me.Label11.ForeColor = System.Drawing.Color.White
         Me.Label11.Location = New System.Drawing.Point(21, 71)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(240, 39)
+        Me.Label11.Size = New System.Drawing.Size(191, 31)
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "Mantenimiento"
         '
@@ -138,18 +142,18 @@ Partial Class FormIngredientePlato
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label2.Location = New System.Drawing.Point(468, 50)
+        Me.Label2.Location = New System.Drawing.Point(30, 43)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 17)
-        Me.Label2.TabIndex = 76
+        Me.Label2.TabIndex = 24
         Me.Label2.Text = "Buscar"
         '
         'txtBuscar
         '
-        Me.txtBuscar.Location = New System.Drawing.Point(553, 49)
+        Me.txtBuscar.Location = New System.Drawing.Point(33, 63)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(287, 22)
-        Me.txtBuscar.TabIndex = 75
+        Me.txtBuscar.Size = New System.Drawing.Size(649, 23)
+        Me.txtBuscar.TabIndex = 48
         '
         'btnCerrar
         '
@@ -159,8 +163,8 @@ Partial Class FormIngredientePlato
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Font = New System.Drawing.Font("Ebrima", 12.0!)
         Me.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnCerrar.Location = New System.Drawing.Point(3, 13)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCerrar.Location = New System.Drawing.Point(3, 14)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(47, 43)
         Me.btnCerrar.TabIndex = 74
@@ -176,10 +180,10 @@ Partial Class FormIngredientePlato
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnEditar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnEditar.Location = New System.Drawing.Point(688, 591)
-        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEditar.Location = New System.Drawing.Point(493, 591)
+        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(130, 38)
+        Me.btnEditar.Size = New System.Drawing.Size(131, 38)
         Me.btnEditar.TabIndex = 73
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = False
@@ -193,10 +197,10 @@ Partial Class FormIngredientePlato
         Me.btnAnyadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAnyadir.Font = New System.Drawing.Font("Ebrima", 10.0!)
         Me.btnAnyadir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.btnAnyadir.Location = New System.Drawing.Point(550, 591)
-        Me.btnAnyadir.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAnyadir.Location = New System.Drawing.Point(354, 591)
+        Me.btnAnyadir.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAnyadir.Name = "btnAnyadir"
-        Me.btnAnyadir.Size = New System.Drawing.Size(130, 38)
+        Me.btnAnyadir.Size = New System.Drawing.Size(131, 38)
         Me.btnAnyadir.TabIndex = 71
         Me.btnAnyadir.Text = "Añadir"
         Me.btnAnyadir.UseVisualStyleBackColor = False
@@ -206,26 +210,29 @@ Partial Class FormIngredientePlato
         Me.IngredientePlatoGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.IngredientePlatoGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.IngredientePlatoGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.IngredientePlatoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.IngredientePlatoGridView.Location = New System.Drawing.Point(37, 92)
-        Me.IngredientePlatoGridView.Margin = New System.Windows.Forms.Padding(4)
+        Me.IngredientePlatoGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.IngredientePlatoGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke
+        Me.IngredientePlatoGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.IngredientePlatoGridView.ColumnHeadersHeight = 29
+        Me.IngredientePlatoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.IngredientePlatoGridView.GridColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.IngredientePlatoGridView.Location = New System.Drawing.Point(33, 106)
         Me.IngredientePlatoGridView.Name = "IngredientePlatoGridView"
         Me.IngredientePlatoGridView.RowHeadersWidth = 51
-        Me.IngredientePlatoGridView.Size = New System.Drawing.Size(803, 454)
-        Me.IngredientePlatoGridView.TabIndex = 70
+        Me.IngredientePlatoGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.IngredientePlatoGridView.Size = New System.Drawing.Size(649, 353)
+        Me.IngredientePlatoGridView.TabIndex = 50
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(67, 42)
+        Me.Label1.Location = New System.Drawing.Point(41, 0)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(380, 29)
-        Me.Label1.TabIndex = 69
+        Me.Label1.Size = New System.Drawing.Size(408, 31)
+        Me.Label1.TabIndex = 0
         Me.Label1.Text = "Registro de Ingrediente del Plato"
         '
         'FormIngredientePlato
@@ -233,7 +240,7 @@ Partial Class FormIngredientePlato
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1245, 642)
+        Me.ClientSize = New System.Drawing.Size(1050, 551)
         Me.Controls.Add(Me.PanelIngredienteMenu)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtBuscar)
@@ -242,7 +249,10 @@ Partial Class FormIngredientePlato
         Me.Controls.Add(Me.btnAnyadir)
         Me.Controls.Add(Me.IngredientePlatoGridView)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FormIngredientePlato"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FormIngredientePlato"
         Me.PanelIngredienteMenu.ResumeLayout(False)
         Me.PanelIngredienteMenu.PerformLayout()

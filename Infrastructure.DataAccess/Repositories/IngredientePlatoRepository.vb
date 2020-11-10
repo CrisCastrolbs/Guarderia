@@ -28,13 +28,13 @@ Public Class IngredientePlatoRepository
 
     '//obtener todos los datos de IngredientePlato
     Public Function obtenerTodo() As IEnumerable(Of IngredientePlato) Implements ICrudRepository(Of IngredientePlato).obtenerTodo
-        Dim result = ExecuteReader("SP_SelectAllIngredientePlato")
+        Dim result = ExecuteReader("SP_SelectIngredientePlatoAll")
         Dim listIngredientePlato = New List(Of IngredientePlato)
         For Each item As DataRow In result.Rows
             Dim ingredienteplatoEntity = New IngredientePlato 'crear objeto usuario
             ingredienteplatoEntity.IdIngredientePlato = Convert.ToInt32(item(0))
-            ingredienteplatoEntity.IdPlato = Convert.ToInt32(item(0))
-            ingredienteplatoEntity.IdIngrediente = Convert.ToInt32(item(0))
+            ingredienteplatoEntity.IdPlato = Convert.ToInt32(item(1))
+            ingredienteplatoEntity.IdIngrediente = Convert.ToInt32(item(2))
 
             'agregar entidad menu a la lista
             listIngredientePlato.Add(ingredienteplatoEntity)
@@ -51,8 +51,8 @@ Public Class IngredientePlatoRepository
         For Each item As DataRow In result.Rows
             Dim ingredienteplatoEntity = New IngredientePlato 'crear objeto ifante
             ingredienteplatoEntity.IdIngredientePlato = Convert.ToInt32(item(0))
-            ingredienteplatoEntity.IdPlato = Convert.ToInt32(item(0))
-            ingredienteplatoEntity.IdIngrediente = Convert.ToInt32(item(0))
+            ingredienteplatoEntity.IdPlato = Convert.ToInt32(item(1))
+            ingredienteplatoEntity.IdIngrediente = Convert.ToInt32(item(2))
             'agregar entidad infante a la lista
             listIngredientePlato.Add(ingredienteplatoEntity)
         Next
@@ -68,8 +68,8 @@ Public Class IngredientePlatoRepository
         For Each item As DataRow In result.Rows
             Dim ingredienteplatoEntity = New IngredientePlato 'crear objeto ifante
             ingredienteplatoEntity.IdIngredientePlato = Convert.ToInt32(item(0))
-            ingredienteplatoEntity.IdPlato = Convert.ToInt32(item(0))
-            ingredienteplatoEntity.IdIngrediente = Convert.ToInt32(item(0))
+            ingredienteplatoEntity.IdPlato = Convert.ToInt32(item(1))
+            ingredienteplatoEntity.IdIngrediente = Convert.ToInt32(item(2))
             'agregar entidad menu a la lista
             listIngredientePlato.Add(ingredienteplatoEntity)
         Next

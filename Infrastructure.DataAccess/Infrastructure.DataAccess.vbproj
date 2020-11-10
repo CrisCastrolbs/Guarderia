@@ -84,6 +84,7 @@
     <Compile Include="Abstracts\IIngredientePlatoRepository.vb" />
     <Compile Include="Abstracts\IIngredienteRepository.vb" />
     <Compile Include="Abstracts\IMenuRepository.vb" />
+    <Compile Include="Abstracts\IPagoMensualRepository.vb" />
     <Compile Include="Abstracts\IPlatoMenuRepository.vb" />
     <Compile Include="Abstracts\IPlatoRepository.vb" />
     <Compile Include="Abstracts\IResponsablePagoRepository.vb" />

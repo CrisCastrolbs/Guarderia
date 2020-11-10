@@ -291,6 +291,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Domain.Models\Domain.Models.vbproj">
+      <Project>{AB5E827E-0088-4D2C-96E4-B24267807B5D}</Project>
+      <Name>Domain.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain.ValueObjects\Domain.ValueObjects.vbproj">
       <Project>{1734ab41-dc2e-428a-baee-59b12becf63a}</Project>
       <Name>Domain.ValueObjects</Name>
