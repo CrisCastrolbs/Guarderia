@@ -3,7 +3,7 @@ Imports Infrastructure.Common
 
 Public Class InfanteRepository
     Inherits MasterRepository
-    Implements IInfanteRepository
+    Implements IPagoMensualRepository
 
 
     'agregar nuevo usuario

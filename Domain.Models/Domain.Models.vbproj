@@ -77,7 +77,6 @@
     <Compile Include="IngredienteModel.vb" />
     <Compile Include="IngredientePlatoModel.vb" />
     <Compile Include="MenuModel.vb" />
-    <Compile Include="PlatoMenuModel.vb" />
     <Compile Include="PlatoModel.vb" />
     <Compile Include="ResponsablePagoModel.vb" />
     <Compile Include="TipoAlergiaModel.vb" />
